@@ -4,9 +4,47 @@ Scanned invoice PDFs in French, English and Arabic in, validated JSON out, with 
 
 The pipeline cleans up each page (denoise, deskew), runs OCR, extracts the invoice with a vision LLM on Groq, checks the result (line items add up to the subtotal, VAT matches the rate, the total matches, dates parse, VAT numbers pass their check digits) and scores each field. Fields below the confidence threshold, or blamed by a failed check, go to a small web app where a reviewer corrects or confirms them. Corrections are stored with the old value, the new value, who made them and when.
 
-It ships with a synthetic labelled set of scanned invoices and an evaluation that compares four extraction strategies on accuracy, latency and cost. Every number in this README comes from the committed run in [`results/`](results/).
+It ships with a synthetic labelled set of scanned invoices and an evaluation that compares five extraction strategies (two of them without any LLM) on accuracy, latency and cost. Every number in this README comes from the committed run in [`results/`](results/).
 
 <!-- RESULTS:START -->
+![The review app on a degraded Arabic invoice: the cleaned page on the left, extracted fields with confidence on the right, three fields waiting for review](docs/screenshot.jpg)
+
+*A real `hybrid` extraction of the Moroccan test invoice `ar-010` (2,475 input / 416 output tokens, 6.1 s end to end). All 12 fields match the label. Three correct fields are still waiting for review because the model-free OCR rules could not confirm them. That is the price of the conservative threshold: see the review routing table.*
+
+## Results
+
+Measured on 2026-10-28 by [`results/2026-10-28-test`](results/2026-10-28-test) ([report](results/2026-10-28-test/report.md), [raw records](results/2026-10-28-test/records.jsonl)). LLM: `qwen/qwen3.8-27b` on Groq's free tier, temperature 0. Hardware: MacBook Pro 2019, Intel Core i7-9750H (6 cores / 12 threads), 16 GB RAM, CPU only, pages processed one at a time, peak memory 887 MB.
+
+All five methods ran on the same 18 test invoices (6 French, 6 English, 6 Arabic; 216 fields). The free tier's 200k tokens/day cap for this model is why the LLM comparison uses 18 of the 36 test documents rather than all of them; the OCR-only methods also ran on all 36 (below).
+
+| Method | Field accuracy | Invoice fully correct | Arabic field accuracy | Latency p50 / p95 per page | Tokens in / out per page | Cost per 1,000 pages |
+|---|---|---|---|---|---|---|
+| OCR + rules, no clean-up | 77.3% | 44.4% | 43.1% | 4.5 / 5.0 s | 0 | $0 |
+| OCR + rules | 82.4% | 50.0% | 51.4% | 5.1 / 6.3 s | 0 | $0 |
+| OCR text → LLM | 94.0% | 61.1% | 83.3% | 9.4 / 16.0 s | 656 / 363 | $1.98 |
+| Vision LLM (image only) | 97.2% | 72.2% | 94.4% | 9.9 / 13.7 s | 2,163 / 370 | $3.21 |
+| **Hybrid (image + OCR text)** | **99.1%** | **88.9%** | **97.2%** | 8.7 / 13.7 s | 2,449 / 372 | $3.45 |
+
+- **Hybrid is best or tied for best in every language and at every degradation level.** It is the only method with no error on numbers, dates or tax ids (OCR + rules does read seller names better: 100% vs 94.4%). Its two wrong fields are one-letter misreads of Arabic company names (`بديرة` for `بديرية`, `سرنج` for `سرندح`). With heavy degradation it still scored 100% of fields, against 94.4% for the vision model alone and 76.4% for OCR + rules.
+- **The OCR transcript is what fixes identifiers.** VAT id accuracy: 72.2% from OCR text alone, 94.4% from the image alone, 100% with both.
+- **Clean-up helps OCR.** Denoise + deskew lifts OCR + rules from 77.3% to 82.4% of fields (36 documents: 79.4% to 82.6%). Deskew lands within 0.03° of the true rotation on average. (The clean-up was not ablated for the LLM methods.)
+- **French and English are nearly solved without an LLM.** OCR + rules scores 100% of French fields and 95.8% of English ones. Arabic (43–51%) is where the LLM earns its cost.
+- **Latency** is wall clock per page minus time spent sleeping on HTTP 429 back-offs (raw figures are in `summary.json`). Every method includes rendering, clean-up and OCR, about 5 s on this CPU; OCR stays in the vision-only path because confidence scoring uses it. **Cost** uses Groq's list price for the model ($0.80 / $4.00 per million input / output tokens, read 2026-10-28). The run itself was on the free tier. The whole LLM evaluation used 114,687 tokens.
+
+### Review routing and validation
+
+At the default threshold of 0.8, the hybrid method sends 13.0% of fields to a reviewer, **catches both of its wrong fields**, and the 87% of fields it auto-accepts are all correct. The queue is conservative: most of what it holds is correct values that a second signal could not confirm.
+
+| Method (threshold 0.8) | Fields sent to review | Wrong fields caught | Auto-accepted fields correct |
+|---|---|---|---|
+| OCR + rules | 19.0% | 97.4% (1 missed) | 99.4% |
+| OCR text → LLM | 13.4% | 100% | 100% |
+| Vision LLM | 13.9% | 100% | 100% |
+| Hybrid | 13.0% | 100% | 100% |
+
+Three of the 18 invoices print a total that does not add up. All three LLM methods flagged all three and raised no arithmetic flag on the 15 consistent ones. OCR + rules flagged 2 of 3 and raised false flags on 3 consistent invoices, caused by its own extraction errors. Full tables per language, degradation level, field and threshold are in the [report](results/2026-10-28-test/report.md).
+
+**OCR-only methods on all 36 test invoices:** OCR + rules 82.6% of fields (French 100%, English 95.8%, Arabic 52.1%), 52.8% of invoices fully correct, 4.9 s per page p50. Without clean-up: 79.4% and 44.4%.
 <!-- RESULTS:END -->
 
 ## Architecture
@@ -48,11 +86,11 @@ flowchart LR
 
 ### Design trade-offs
 
-- **Hybrid input.** The vision model reads layout and Arabic script better than the OCR engine on degraded scans, while the OCR transcript pins down digits. Sending both costs a few hundred extra input tokens per page.
-- **Confidence from independent evidence, not from the model.** LLM self-reported confidence is poorly calibrated. Here a field is trusted when it is corroborated by arithmetic, can be found in the OCR output, and matches what a model-free extractor found. Arithmetic is the strongest signal: wrong digits rarely still add up.
+- **Hybrid input.** The vision model reads layout and Arabic script better than the OCR engine on degraded scans, while the OCR transcript pins down digits and ids. Sending both cost 286 extra input tokens per page (2,449 vs 2,163) and bought 1.9 points of field accuracy and 16.7 points of fully correct invoices.
+- **Confidence from independent evidence, not from the model.** LLM self-reported confidence tends to be poorly calibrated, so the pipeline does not ask for it. Here a field is trusted when it is corroborated by arithmetic, can be found in the OCR output, and matches what a model-free extractor found. Arithmetic is the strongest signal: wrong digits rarely still add up.
 - **Report what is printed, flag what is wrong.** The prompt forbids the model from correcting totals, and validation never rewrites a value. An invoice whose total does not add up is a finding for a person, not something to repair silently.
 - **Parse numbers ourselves.** The model is asked for plain decimals, but the coercion layer still parses locale formats, so `1 234,560 TND` stays 1234.560 and not 1234560.
-- **OCR on CPU, in-process.** RapidOCR runs PaddleOCR's mobile models (about 30 MB) on ONNX Runtime: no PyTorch, no GPU and no system packages. That keeps the Docker image and CI simple and runs on a 2019 Intel laptop. Tesseract with `fra`/`ara` packs was the other candidate. It needs a system install, which this development machine does not have, so it was not measured here. The OCR engine sits behind a small protocol (`OcrEngine` in `ocr.py`), so swapping engines means writing one adapter.
+- **OCR on CPU, in-process.** RapidOCR runs PaddleOCR's mobile models (under 50 MB) on ONNX Runtime: no PyTorch, no GPU and no system packages. That keeps the Docker image and CI simple and runs on a 2019 Intel laptop. Tesseract with `fra`/`ara` packs was the other candidate. It needs a system install, which this development machine does not have, so it was not measured here. The OCR engine sits behind a small protocol (`OcrEngine` in `ocr.py`), so swapping engines means writing one adapter.
 - **One synchronous request per upload.** The API processes the PDF inside the request (in a worker thread). That is fine for a review tool; a production intake would put a queue in front of it.
 
 ## Dataset
@@ -85,7 +123,7 @@ Raw per-document records (prediction, label, per-field confidence and signals, v
 
 ## Run it
 
-Requirements: Python 3.12 and [uv](https://docs.astral.sh/uv/), plus a free Groq API key for the LLM methods (`rules` works without one). The OCR models (about 30 MB) download on first use.
+Requirements: Python 3.12 and [uv](https://docs.astral.sh/uv/), plus a free Groq API key for the LLM methods (`rules` works without one). The OCR models (under 50 MB) download on first use.
 
 ```bash
 cp .env.example .env        # then set GROQ_API_KEY
@@ -109,11 +147,15 @@ docker run --rm -p 8000:8000 --env-file .env -v docai-data:/data docai
 Reproduce the evaluation:
 
 ```bash
-uv run python eval/run_eval.py --split data/test --out results/my-run
+uv run python eval/run_eval.py --split data/test --out results/my-run --methods rules,rules_raw
+uv run python eval/run_eval.py --split data/test --out results/my-run --methods ocr_llm,vlm,hybrid \
+  --per-language 6 --resume --token-budget 180000
 uv run python eval/report.py results/my-run
 # optional: regenerate the dataset (same pixels; only the PDF timestamps differ)
 uv run --group datagen python eval/generate_dataset.py --out data/test --per-language 12 --seed 2
 ```
+
+The runner paces calls from Groq's rate-limit headers, stops cleanly when the daily token cap is reached (rerun with `--resume` later; finished records are never redone) and, with `DOCAI_LLM_CACHE=var/llm-cache`, caches every model response on disk so a crash never pays for the same call twice.
 
 Development checks, the same ones CI runs:
 
@@ -135,6 +177,14 @@ uv run ruff check . && uv run ruff format --check . && uv run mypy && uv run pyt
 ## Limitations
 
 <!-- LIMITATIONS:START -->
+- **Synthetic, template-generated data.** All invoices come from one renderer with per-language layouts, two fonts and simulated scan damage. Real invoices vary far more (logos, stamps, handwriting, multi-column layouts, photos taken with a phone), so treat these numbers as a controlled comparison between methods, not as production accuracy.
+- **Small sample.** The LLM comparison covers 18 invoices and 216 fields: one wrong field moves field accuracy by 0.46 points, and the per-language slices have 6 documents each. The free-tier daily token cap set that size.
+- **Single-page documents only were evaluated.** The pipeline handles up to 5 pages (all page images go to the model and line items are merged across pages), but no multi-page invoice is in the test set.
+- **The confidence weights and threshold are hand-set**, not fitted on data. The routing table shows the trade-off: no missed errors at 0.8, at the cost of reviewing about 13% of fields, most of them correct.
+- **The OCR baseline is simple.** The rules were written against the dev split and are weak on Arabic; a layout-aware extractor would close part of the gap at zero token cost. For Latin-script pages, OCR runs twice (Arabic recogniser first to detect the script, then the Latin one).
+- **`qwen/qwen3.8-27b` is a preview model on Groq**, and the only vision model Groq lists today. Tesseract was not compared because it is not installed on the development machine.
+- **The review app has no authentication** and processes uploads synchronously; it is a reviewer's tool, not a multi-tenant service.
+- **Not verified here:** the Docker image (Docker is not installed on the development machine) and the GitHub Actions workflow (not run yet). The same checks CI runs (ruff, ruff format, mypy --strict, pytest including the OCR integration test) were run locally and pass.
 <!-- LIMITATIONS:END -->
 
 ## Licence

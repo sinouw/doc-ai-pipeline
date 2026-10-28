@@ -170,7 +170,7 @@ def main() -> None:
         {
             "split": str(args.split),
             "model": model or run_info.get("model", ""),
-            "machine": run_info.get("machine", MACHINE),
+            "machine": MACHINE,
             "python": platform.python_version(),
         }
     )

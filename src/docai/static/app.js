@@ -19,6 +19,7 @@ async function api(path, options = {}) {
   return body;
 }
 
+const STATUS_LABELS = { auto_accepted: "auto", needs_review: "review", reviewed: "reviewed" };
 const display = (value) => (value === null || value === undefined ? "" : typeof value === "object" ? JSON.stringify(value, null, 1) : String(value));
 
 async function refreshLists() {
@@ -62,7 +63,7 @@ function fieldRow(field) {
     el("th", {}, field.name),
     valueCell,
     el("td", { class: "conf", title: JSON.stringify(field.signals) }, field.confidence.toFixed(2)),
-    el("td", { class: "status" }, field.status.replace("_", " "),
+    el("td", { class: "status" }, STATUS_LABELS[field.status] || field.status,
       editing ? el("div", { class: "issues" }, field.issues.join("; ")) : ""));
 }
 

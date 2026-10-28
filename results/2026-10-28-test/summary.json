@@ -1,0 +1,1467 @@
+{
+  "run": {
+    "started_at": "2026-10-28T09:42:46+00:00",
+    "split": "data/test",
+    "methods": [
+      "rules",
+      "rules_raw",
+      "ocr_llm",
+      "vlm",
+      "hybrid"
+    ],
+    "model": "qwen/qwen3.8-27b",
+    "commit": "f78202c",
+    "machine": "MacBook Pro 2019, Intel Core i7-9750H (6 cores / 12 threads), 16 GB RAM, CPU only",
+    "python": "3.12.15",
+    "invocations": [
+      {
+        "started_at": "2026-10-28T10:18:57+00:00",
+        "methods": [
+          "rules",
+          "rules_raw"
+        ],
+        "per_language": null,
+        "commit": "b306aa0",
+        "peak_rss_mb": 869,
+        "finished_at": "2026-10-28T10:24:02+00:00",
+        "stopped_on_quota": null
+      },
+      {
+        "started_at": "2026-10-28T10:24:20+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "b306aa0",
+        "peak_rss_mb": 887,
+        "finished_at": "2026-10-28T10:24:25+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198561, Requested 2543. Please try again in 7m56.928s. Need more tokens? Upgrade to Dev Tier today at https://con"
+      },
+      {
+        "started_at": "2026-10-28T10:39:27+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "b306aa0",
+        "peak_rss_mb": 792,
+        "finished_at": "2026-10-28T10:39:34+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199049, Requested 2521. Please try again in 11m18.239999999s. Need more tokens? Upgrade to Dev Tier today at http"
+      },
+      {
+        "started_at": "2026-10-28T10:40:22+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "b306aa0",
+        "peak_rss_mb": 833,
+        "finished_at": "2026-10-28T10:40:28+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198924, Requested 2562. Please try again in 10m41.952s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T10:45:33+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 708,
+        "finished_at": "2026-10-28T10:45:58+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198161, Requested 2522. Please try again in 4m55.056s. Need more tokens? Upgrade to Dev Tier today at https://con"
+      },
+      {
+        "started_at": "2026-10-28T10:51:01+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 751,
+        "finished_at": "2026-10-28T10:51:12+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197433, Requested 2569. Please try again in 864ms. Need more tokens? Upgrade to Dev Tier today at https://console"
+      },
+      {
+        "started_at": "2026-10-28T10:56:14+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 835,
+        "finished_at": "2026-10-28T10:56:23+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 200000, Requested 2903. Please try again in 20m54.096s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T11:01:24+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 838,
+        "finished_at": "2026-10-28T11:01:28+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199292, Requested 2842. Please try again in 15m21.888s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T11:06:29+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 844,
+        "finished_at": "2026-10-28T11:06:34+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198585, Requested 2861. Please try again in 10m24.672s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T11:11:35+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 859,
+        "finished_at": "2026-10-28T11:11:40+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197877, Requested 2802. Please try again in 4m53.328s. Need more tokens? Upgrade to Dev Tier today at https://con"
+      },
+      {
+        "started_at": "2026-10-28T11:16:41+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 835,
+        "finished_at": "2026-10-28T11:16:50+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199994, Requested 836. Please try again in 5m58.56s. Need more tokens? Upgrade to Dev Tier today at https://conso"
+      },
+      {
+        "started_at": "2026-10-28T11:21:52+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 836,
+        "finished_at": "2026-10-28T11:21:57+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199282, Requested 786. Please try again in 29.376s. Need more tokens? Upgrade to Dev Tier today at https://consol"
+      },
+      {
+        "started_at": "2026-10-28T11:27:01+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 833,
+        "finished_at": "2026-10-28T11:27:17+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199651, Requested 2555. Please try again in 15m52.992s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T11:32:19+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 834,
+        "finished_at": "2026-10-28T11:32:24+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198940, Requested 2555. Please try again in 10m45.84s. Need more tokens? Upgrade to Dev Tier today at https://con"
+      },
+      {
+        "started_at": "2026-10-28T11:37:26+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 808,
+        "finished_at": "2026-10-28T11:37:34+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198223, Requested 2652. Please try again in 6m18s. Need more tokens? Upgrade to Dev Tier today at https://console"
+      },
+      {
+        "started_at": "2026-10-28T11:42:35+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 838,
+        "finished_at": "2026-10-28T11:42:42+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197510, Requested 2633. Please try again in 1m1.776s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+      },
+      {
+        "started_at": "2026-10-28T11:47:44+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 828,
+        "finished_at": "2026-10-28T11:47:54+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 200000, Requested 2854. Please try again in 20m32.928s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T11:52:56+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 834,
+        "finished_at": "2026-10-28T11:53:02+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199287, Requested 2803. Please try again in 15m2.879999999s. Need more tokens? Upgrade to Dev Tier today at https"
+      },
+      {
+        "started_at": "2026-10-28T11:58:04+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 834,
+        "finished_at": "2026-10-28T11:58:10+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198575, Requested 3058. Please try again in 11m45.456s. Need more tokens? Upgrade to Dev Tier today at https://co"
+      },
+      {
+        "started_at": "2026-10-28T12:03:12+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "c3b28ea",
+        "peak_rss_mb": 796,
+        "finished_at": "2026-10-28T12:03:18+00:00",
+        "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197861, Requested 2836. Please try again in 5m1.104s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+      },
+      {
+        "started_at": "2026-10-28T12:07:49+00:00",
+        "methods": [
+          "ocr_llm",
+          "vlm",
+          "hybrid"
+        ],
+        "per_language": 6,
+        "commit": "fca022e",
+        "peak_rss_mb": 840,
+        "finished_at": "2026-10-28T12:27:15+00:00",
+        "stopped_on_quota": null,
+        "llm_tokens": 104599
+      }
+    ]
+  },
+  "deskew_mean_abs_error_deg": 0.03,
+  "common_docs": [
+    "ar-001",
+    "ar-002",
+    "ar-003",
+    "ar-004",
+    "ar-005",
+    "ar-006",
+    "en-001",
+    "en-002",
+    "en-003",
+    "en-004",
+    "en-005",
+    "en-006",
+    "fr-001",
+    "fr-002",
+    "fr-003",
+    "fr-004",
+    "fr-005",
+    "fr-006"
+  ],
+  "methods": {
+    "rules": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 82.4,
+      "exact_match": 50.0,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 88.9,
+        "due_date": 88.9,
+        "seller_name": 100.0,
+        "seller_vat_id": 61.1,
+        "buyer_name": 66.7,
+        "currency": 100.0,
+        "subtotal": 94.4,
+        "vat_rate": 66.7,
+        "vat_amount": 77.8,
+        "total": 66.7,
+        "line_items": 77.8
+      },
+      "line_items_with_descriptions": 72.2,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 51.4,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 95.8,
+            "exact_match": 50.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 76.4,
+            "exact_match": 33.3
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 88.9,
+            "exact_match": 50.0
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 81.9,
+            "exact_match": 66.7
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 5128,
+        "p95": 6256,
+        "mean": 4974
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 5128,
+        "p95": 6256
+      },
+      "extract_ms_per_page": {
+        "p50": 0,
+        "p95": 0
+      },
+      "rate_limit_wait_ms_total": 0,
+      "tokens_per_page": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "llm_calls": 0,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.0,
+      "cost_usd_per_1000_pages": 0.0,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.4,
+          "errors_missed": 1
+        },
+        "0.6": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.4,
+          "errors_missed": 1
+        },
+        "0.7": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.4,
+          "errors_missed": 1
+        },
+        "0.8": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.4,
+          "errors_missed": 1
+        },
+        "0.9": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.4,
+          "errors_missed": 1
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "2/3",
+        "clean_docs_flagged": "3/15"
+      }
+    },
+    "rules_raw": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 77.3,
+      "exact_match": 44.4,
+      "field_accuracy_by_field": {
+        "invoice_number": 94.4,
+        "issue_date": 88.9,
+        "due_date": 83.3,
+        "seller_name": 94.4,
+        "seller_vat_id": 55.6,
+        "buyer_name": 66.7,
+        "currency": 100.0,
+        "subtotal": 83.3,
+        "vat_rate": 66.7,
+        "vat_amount": 66.7,
+        "total": 61.1,
+        "line_items": 66.7
+      },
+      "line_items_with_descriptions": 38.9,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 43.1,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 90.3,
+            "exact_match": 50.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 66.7,
+            "exact_match": 33.3
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 86.1,
+            "exact_match": 50.0
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 79.2,
+            "exact_match": 50.0
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 4466,
+        "p95": 5016,
+        "mean": 4135
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 4466,
+        "p95": 5016
+      },
+      "extract_ms_per_page": {
+        "p50": 0,
+        "p95": 0
+      },
+      "rate_limit_wait_ms_total": 0,
+      "tokens_per_page": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "llm_calls": 0,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.0,
+      "cost_usd_per_1000_pages": 0.0,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 24.1,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.6": {
+          "review_rate": 24.1,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.7": {
+          "review_rate": 24.1,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.8": {
+          "review_rate": 24.1,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 24.5,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "2/3",
+        "clean_docs_flagged": "3/15"
+      }
+    },
+    "ocr_llm": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 94.0,
+      "exact_match": 61.1,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 94.4,
+        "seller_name": 94.4,
+        "seller_vat_id": 72.2,
+        "buyer_name": 88.9,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 77.8,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 77.8,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 83.3,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 66.7
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 90.3,
+            "exact_match": 50.0
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 58612,
+        "p95": 81813,
+        "mean": 51261
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 9400,
+        "p95": 15954
+      },
+      "extract_ms_per_page": {
+        "p50": 49212,
+        "p95": 75518
+      },
+      "rate_limit_wait_ms_total": 743935,
+      "tokens_per_page": {
+        "prompt": 656,
+        "completion": 363
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 9,
+      "cost_usd_per_page": 0.001976,
+      "cost_usd_per_1000_pages": 1.98,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 8.8,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.6": {
+          "review_rate": 9.7,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.7": {
+          "review_rate": 10.6,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.8": {
+          "review_rate": 13.4,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    },
+    "vlm": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 97.2,
+      "exact_match": 72.2,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 100.0,
+        "seller_name": 88.9,
+        "seller_vat_id": 94.4,
+        "buyer_name": 83.3,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 100.0,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 83.3,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 50.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 50.0
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 10516,
+        "p95": 59195,
+        "mean": 21862
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 9869,
+        "p95": 13724
+      },
+      "extract_ms_per_page": {
+        "p50": 1760,
+        "p95": 45632
+      },
+      "rate_limit_wait_ms_total": 220796,
+      "tokens_per_page": {
+        "prompt": 2163,
+        "completion": 370
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.003209,
+      "cost_usd_per_1000_pages": 3.21,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 5.1,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.6": {
+          "review_rate": 11.1,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.7": {
+          "review_rate": 11.6,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.8": {
+          "review_rate": 13.9,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.9,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    },
+    "hybrid": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 99.1,
+      "exact_match": 88.9,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 100.0,
+        "seller_name": 94.4,
+        "seller_vat_id": 100.0,
+        "buyer_name": 94.4,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 100.0,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 94.4,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 14991,
+        "p95": 29959,
+        "mean": 16423
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 8733,
+        "p95": 13680
+      },
+      "extract_ms_per_page": {
+        "p50": 6176,
+        "p95": 24457
+      },
+      "rate_limit_wait_ms_total": 130129,
+      "tokens_per_page": {
+        "prompt": 2449,
+        "completion": 372
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 11,
+      "cost_usd_per_page": 0.003446,
+      "cost_usd_per_1000_pages": 3.45,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 3.7,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.6": {
+          "review_rate": 9.7,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.7": {
+          "review_rate": 10.6,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.8": {
+          "review_rate": 13.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    }
+  },
+  "methods_all_docs": {
+    "rules": {
+      "docs": 36,
+      "errors": 0,
+      "field_accuracy": 82.6,
+      "exact_match": 52.8,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 88.9,
+        "due_date": 91.7,
+        "seller_name": 100.0,
+        "seller_vat_id": 61.1,
+        "buyer_name": 66.7,
+        "currency": 100.0,
+        "subtotal": 97.2,
+        "vat_rate": 69.4,
+        "vat_amount": 77.8,
+        "total": 66.7,
+        "line_items": 72.2
+      },
+      "line_items_with_descriptions": 66.7,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 12,
+            "field_accuracy": 52.1,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 12,
+            "field_accuracy": 95.8,
+            "exact_match": 58.3
+          },
+          "fr": {
+            "docs": 12,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 12,
+            "field_accuracy": 79.2,
+            "exact_match": 41.7
+          },
+          "light": {
+            "docs": 12,
+            "field_accuracy": 87.5,
+            "exact_match": 50.0
+          },
+          "medium": {
+            "docs": 12,
+            "field_accuracy": 81.2,
+            "exact_match": 66.7
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 4921,
+        "p95": 5855,
+        "mean": 4728
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 4921,
+        "p95": 5855
+      },
+      "extract_ms_per_page": {
+        "p50": 0,
+        "p95": 0
+      },
+      "rate_limit_wait_ms_total": 0,
+      "tokens_per_page": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "llm_calls": 0,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.0,
+      "cost_usd_per_1000_pages": 0.0,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 18.5,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.3,
+          "errors_missed": 2
+        },
+        "0.6": {
+          "review_rate": 18.5,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.3,
+          "errors_missed": 2
+        },
+        "0.7": {
+          "review_rate": 18.5,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.3,
+          "errors_missed": 2
+        },
+        "0.8": {
+          "review_rate": 18.5,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.3,
+          "errors_missed": 2
+        },
+        "0.9": {
+          "review_rate": 18.8,
+          "auto_accepted_accuracy": 99.4,
+          "errors_caught": 97.3,
+          "errors_missed": 2
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "2/3",
+        "clean_docs_flagged": "7/33"
+      }
+    },
+    "rules_raw": {
+      "docs": 36,
+      "errors": 0,
+      "field_accuracy": 79.4,
+      "exact_match": 44.4,
+      "field_accuracy_by_field": {
+        "invoice_number": 94.4,
+        "issue_date": 88.9,
+        "due_date": 86.1,
+        "seller_name": 94.4,
+        "seller_vat_id": 58.3,
+        "buyer_name": 75.0,
+        "currency": 100.0,
+        "subtotal": 86.1,
+        "vat_rate": 66.7,
+        "vat_amount": 66.7,
+        "total": 63.9,
+        "line_items": 72.2
+      },
+      "line_items_with_descriptions": 41.7,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 12,
+            "field_accuracy": 46.5,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 12,
+            "field_accuracy": 94.4,
+            "exact_match": 66.7
+          },
+          "fr": {
+            "docs": 12,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 12,
+            "field_accuracy": 72.9,
+            "exact_match": 33.3
+          },
+          "light": {
+            "docs": 12,
+            "field_accuracy": 84.7,
+            "exact_match": 50.0
+          },
+          "medium": {
+            "docs": 12,
+            "field_accuracy": 80.6,
+            "exact_match": 50.0
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 4314,
+        "p95": 4782,
+        "mean": 4016
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 4314,
+        "p95": 4782
+      },
+      "extract_ms_per_page": {
+        "p50": 0,
+        "p95": 0
+      },
+      "rate_limit_wait_ms_total": 0,
+      "tokens_per_page": {
+        "prompt": 0,
+        "completion": 0
+      },
+      "llm_calls": 0,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.0,
+      "cost_usd_per_1000_pages": 0.0,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 20.6,
+          "auto_accepted_accuracy": 99.1,
+          "errors_caught": 96.6,
+          "errors_missed": 3
+        },
+        "0.6": {
+          "review_rate": 20.6,
+          "auto_accepted_accuracy": 99.1,
+          "errors_caught": 96.6,
+          "errors_missed": 3
+        },
+        "0.7": {
+          "review_rate": 20.6,
+          "auto_accepted_accuracy": 99.1,
+          "errors_caught": 96.6,
+          "errors_missed": 3
+        },
+        "0.8": {
+          "review_rate": 20.6,
+          "auto_accepted_accuracy": 99.1,
+          "errors_caught": 96.6,
+          "errors_missed": 3
+        },
+        "0.9": {
+          "review_rate": 21.3,
+          "auto_accepted_accuracy": 99.1,
+          "errors_caught": 96.6,
+          "errors_missed": 3
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "2/3",
+        "clean_docs_flagged": "4/33"
+      }
+    },
+    "ocr_llm": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 94.0,
+      "exact_match": 61.1,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 94.4,
+        "seller_name": 94.4,
+        "seller_vat_id": 72.2,
+        "buyer_name": 88.9,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 77.8,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 77.8,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 83.3,
+            "exact_match": 0.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 66.7
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 90.3,
+            "exact_match": 50.0
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 58612,
+        "p95": 81813,
+        "mean": 51261
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 9400,
+        "p95": 15954
+      },
+      "extract_ms_per_page": {
+        "p50": 49212,
+        "p95": 75518
+      },
+      "rate_limit_wait_ms_total": 743935,
+      "tokens_per_page": {
+        "prompt": 656,
+        "completion": 363
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 9,
+      "cost_usd_per_page": 0.001976,
+      "cost_usd_per_1000_pages": 1.98,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 8.8,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.6": {
+          "review_rate": 9.7,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.7": {
+          "review_rate": 10.6,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 92.3,
+          "errors_missed": 1
+        },
+        "0.8": {
+          "review_rate": 13.4,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    },
+    "vlm": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 97.2,
+      "exact_match": 72.2,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 100.0,
+        "seller_name": 88.9,
+        "seller_vat_id": 94.4,
+        "buyer_name": 83.3,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 100.0,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 83.3,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 50.0
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 94.4,
+            "exact_match": 50.0
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 10516,
+        "p95": 59195,
+        "mean": 21862
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 9869,
+        "p95": 13724
+      },
+      "extract_ms_per_page": {
+        "p50": 1760,
+        "p95": 45632
+      },
+      "rate_limit_wait_ms_total": 220796,
+      "tokens_per_page": {
+        "prompt": 2163,
+        "completion": 370
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 0,
+      "cost_usd_per_page": 0.003209,
+      "cost_usd_per_1000_pages": 3.21,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 5.1,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.6": {
+          "review_rate": 11.1,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.7": {
+          "review_rate": 11.6,
+          "auto_accepted_accuracy": 99.5,
+          "errors_caught": 83.3,
+          "errors_missed": 1
+        },
+        "0.8": {
+          "review_rate": 13.9,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.9,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    },
+    "hybrid": {
+      "docs": 18,
+      "errors": 0,
+      "field_accuracy": 99.1,
+      "exact_match": 88.9,
+      "field_accuracy_by_field": {
+        "invoice_number": 100.0,
+        "issue_date": 100.0,
+        "due_date": 100.0,
+        "seller_name": 94.4,
+        "seller_vat_id": 100.0,
+        "buyer_name": 94.4,
+        "currency": 100.0,
+        "subtotal": 100.0,
+        "vat_rate": 100.0,
+        "vat_amount": 100.0,
+        "total": 100.0,
+        "line_items": 100.0
+      },
+      "line_items_with_descriptions": 94.4,
+      "by": {
+        "lang": {
+          "ar": {
+            "docs": 6,
+            "field_accuracy": 97.2,
+            "exact_match": 66.7
+          },
+          "en": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "fr": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          }
+        },
+        "severity": {
+          "heavy": {
+            "docs": 6,
+            "field_accuracy": 100.0,
+            "exact_match": 100.0
+          },
+          "light": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          },
+          "medium": {
+            "docs": 6,
+            "field_accuracy": 98.6,
+            "exact_match": 83.3
+          }
+        }
+      },
+      "latency_ms_per_page": {
+        "p50": 14991,
+        "p95": 29959,
+        "mean": 16423
+      },
+      "latency_excl_rate_limit_ms_per_page": {
+        "p50": 8733,
+        "p95": 13680
+      },
+      "extract_ms_per_page": {
+        "p50": 6176,
+        "p95": 24457
+      },
+      "rate_limit_wait_ms_total": 130129,
+      "tokens_per_page": {
+        "prompt": 2449,
+        "completion": 372
+      },
+      "llm_calls": 18,
+      "rate_limit_retries": 11,
+      "cost_usd_per_page": 0.003446,
+      "cost_usd_per_1000_pages": 3.45,
+      "review_routing": {
+        "0.5": {
+          "review_rate": 3.7,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.6": {
+          "review_rate": 9.7,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.7": {
+          "review_rate": 10.6,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.8": {
+          "review_rate": 13.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        },
+        "0.9": {
+          "review_rate": 19.0,
+          "auto_accepted_accuracy": 100.0,
+          "errors_caught": 100.0,
+          "errors_missed": 0
+        }
+      },
+      "validation": {
+        "injected_errors_flagged": "3/3",
+        "clean_docs_flagged": "0/15"
+      }
+    }
+  }
+}

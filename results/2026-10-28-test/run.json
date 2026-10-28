@@ -1,0 +1,290 @@
+{
+  "started_at": "2026-10-28T09:42:46+00:00",
+  "split": "data/test",
+  "methods": [
+    "rules",
+    "rules_raw",
+    "ocr_llm",
+    "vlm",
+    "hybrid"
+  ],
+  "model": "qwen/qwen3.8-27b",
+  "commit": "f78202c",
+  "machine": "MacBook Pro 2019, Intel Core i7-9750H (6 cores / 12 threads), 16 GB RAM, CPU only",
+  "python": "3.12.15",
+  "invocations": [
+    {
+      "started_at": "2026-10-28T10:18:57+00:00",
+      "methods": [
+        "rules",
+        "rules_raw"
+      ],
+      "per_language": null,
+      "commit": "b306aa0",
+      "peak_rss_mb": 869,
+      "finished_at": "2026-10-28T10:24:02+00:00",
+      "stopped_on_quota": null
+    },
+    {
+      "started_at": "2026-10-28T10:24:20+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "b306aa0",
+      "peak_rss_mb": 887,
+      "finished_at": "2026-10-28T10:24:25+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198561, Requested 2543. Please try again in 7m56.928s. Need more tokens? Upgrade to Dev Tier today at https://con"
+    },
+    {
+      "started_at": "2026-10-28T10:39:27+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "b306aa0",
+      "peak_rss_mb": 792,
+      "finished_at": "2026-10-28T10:39:34+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199049, Requested 2521. Please try again in 11m18.239999999s. Need more tokens? Upgrade to Dev Tier today at http"
+    },
+    {
+      "started_at": "2026-10-28T10:40:22+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "b306aa0",
+      "peak_rss_mb": 833,
+      "finished_at": "2026-10-28T10:40:28+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198924, Requested 2562. Please try again in 10m41.952s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T10:45:33+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 708,
+      "finished_at": "2026-10-28T10:45:58+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198161, Requested 2522. Please try again in 4m55.056s. Need more tokens? Upgrade to Dev Tier today at https://con"
+    },
+    {
+      "started_at": "2026-10-28T10:51:01+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 751,
+      "finished_at": "2026-10-28T10:51:12+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197433, Requested 2569. Please try again in 864ms. Need more tokens? Upgrade to Dev Tier today at https://console"
+    },
+    {
+      "started_at": "2026-10-28T10:56:14+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 835,
+      "finished_at": "2026-10-28T10:56:23+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 200000, Requested 2903. Please try again in 20m54.096s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T11:01:24+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 838,
+      "finished_at": "2026-10-28T11:01:28+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199292, Requested 2842. Please try again in 15m21.888s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T11:06:29+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 844,
+      "finished_at": "2026-10-28T11:06:34+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198585, Requested 2861. Please try again in 10m24.672s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T11:11:35+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 859,
+      "finished_at": "2026-10-28T11:11:40+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197877, Requested 2802. Please try again in 4m53.328s. Need more tokens? Upgrade to Dev Tier today at https://con"
+    },
+    {
+      "started_at": "2026-10-28T11:16:41+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 835,
+      "finished_at": "2026-10-28T11:16:50+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199994, Requested 836. Please try again in 5m58.56s. Need more tokens? Upgrade to Dev Tier today at https://conso"
+    },
+    {
+      "started_at": "2026-10-28T11:21:52+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 836,
+      "finished_at": "2026-10-28T11:21:57+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199282, Requested 786. Please try again in 29.376s. Need more tokens? Upgrade to Dev Tier today at https://consol"
+    },
+    {
+      "started_at": "2026-10-28T11:27:01+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 833,
+      "finished_at": "2026-10-28T11:27:17+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199651, Requested 2555. Please try again in 15m52.992s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T11:32:19+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 834,
+      "finished_at": "2026-10-28T11:32:24+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198940, Requested 2555. Please try again in 10m45.84s. Need more tokens? Upgrade to Dev Tier today at https://con"
+    },
+    {
+      "started_at": "2026-10-28T11:37:26+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 808,
+      "finished_at": "2026-10-28T11:37:34+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198223, Requested 2652. Please try again in 6m18s. Need more tokens? Upgrade to Dev Tier today at https://console"
+    },
+    {
+      "started_at": "2026-10-28T11:42:35+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 838,
+      "finished_at": "2026-10-28T11:42:42+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197510, Requested 2633. Please try again in 1m1.776s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+    },
+    {
+      "started_at": "2026-10-28T11:47:44+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 828,
+      "finished_at": "2026-10-28T11:47:54+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 200000, Requested 2854. Please try again in 20m32.928s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T11:52:56+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 834,
+      "finished_at": "2026-10-28T11:53:02+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199287, Requested 2803. Please try again in 15m2.879999999s. Need more tokens? Upgrade to Dev Tier today at https"
+    },
+    {
+      "started_at": "2026-10-28T11:58:04+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 834,
+      "finished_at": "2026-10-28T11:58:10+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198575, Requested 3058. Please try again in 11m45.456s. Need more tokens? Upgrade to Dev Tier today at https://co"
+    },
+    {
+      "started_at": "2026-10-28T12:03:12+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "c3b28ea",
+      "peak_rss_mb": 796,
+      "finished_at": "2026-10-28T12:03:18+00:00",
+      "stopped_on_quota": "daily quota reached: {\"error\":{\"message\":\"Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_[redacted]` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197861, Requested 2836. Please try again in 5m1.104s. Need more tokens? Upgrade to Dev Tier today at https://cons"
+    },
+    {
+      "started_at": "2026-10-28T12:07:49+00:00",
+      "methods": [
+        "ocr_llm",
+        "vlm",
+        "hybrid"
+      ],
+      "per_language": 6,
+      "commit": "fca022e",
+      "peak_rss_mb": 840,
+      "finished_at": "2026-10-28T12:27:15+00:00",
+      "stopped_on_quota": null,
+      "llm_tokens": 104599
+    }
+  ]
+}

@@ -37,12 +37,15 @@ def table(header: list[str], rows: list[list[str]]) -> list[str]:
 
 
 def invocations(run: dict[str, Any]) -> str:
-    parts = []
-    for inv in run.get("invocations", []):
-        peak = f", peak RSS {inv['peak_rss_mb']} MB" if inv.get("peak_rss_mb") else ""
-        stop = ", stopped on the daily quota" if inv.get("stopped_on_quota") else ""
-        parts.append(f"`{inv.get('commit')}` {'/'.join(inv.get('methods', []))}{peak}{stop}")
-    return "; ".join(parts) or "n/a"
+    runs = run.get("invocations", [])
+    stopped = [i for i in runs if i.get("stopped_on_quota")]
+    peak = max((i.get("peak_rss_mb") or 0 for i in runs), default=0)
+    commits = sorted({i.get("commit", "?") for i in runs})
+    parts = [f"{len(runs)} invocations of the resumable runner (commits {', '.join(f'`{c}`' for c in commits)})"]
+    if stopped:
+        parts.append(f"{len(stopped)} stopped on Groq's daily token cap and were resumed later")
+    parts.append(f"peak memory {peak} MB")
+    return "; ".join(parts)
 
 
 def render(summary: dict[str, Any]) -> str:
@@ -56,7 +59,7 @@ def render(summary: dict[str, Any]) -> str:
         f"  ({', '.join(summary.get('common_docs', []))})",
         f"- LLM: `{run.get('model')}` on Groq (free tier), temperature 0",
         f"- Machine: {run.get('machine')}, Python {run.get('python')}",
-        f"- Invocations (commit, methods, peak memory): {invocations(run)}",
+        f"- Runs: {invocations(run)}",
         f"- Deskew: mean absolute error {summary.get('deskew_mean_abs_error_deg')} degrees vs the generator's rotation",
         "",
         "## Headline",
