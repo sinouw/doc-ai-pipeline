@@ -23,6 +23,10 @@ class LlmError(RuntimeError):
     pass
 
 
+class QuotaExhaustedError(LlmError):
+    """A daily quota ran out: retrying within minutes cannot succeed."""
+
+
 @dataclass
 class ChatResult:
     content: str
@@ -73,6 +77,8 @@ class GroqClient:
                 waited += min(2**retries, 30)
                 time.sleep(min(2**retries, 30))
                 continue
+            if response.status_code == 429 and "per day" in response.text:
+                raise QuotaExhaustedError(f"daily quota reached: {response.text[:300]}")
             if response.status_code == 429 or response.status_code >= 500:
                 if retries >= self.max_retries:
                     raise LlmError(f"HTTP {response.status_code} after {retries} retries: {response.text[:300]}")
