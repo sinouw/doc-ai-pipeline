@@ -19,8 +19,10 @@ RUN uv sync --locked --no-dev --no-install-project
 COPY src ./src
 RUN uv sync --locked --no-dev
 
-# Fetch the OCR models at build time so the container starts offline-ready.
-RUN uv run python -c "from docai.ocr import _engine; _engine('arabic'); _engine('latin')"
+# Fetch every OCR model at build time (recognisers load lazily, so run one real pass per script).
+RUN uv run --no-sync python -c "import numpy as np, cv2; from docai.ocr import RapidOcr; \
+img = np.full((120, 600), 255, np.uint8); cv2.putText(img, 'INVOICE 2026', (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1.5, 0, 3); \
+ocr = RapidOcr(); print(ocr(img, 'arabic').text(), '|', ocr(img, 'latin').text())"
 
 RUN useradd --create-home app && mkdir -p /data && chown app /data
 USER app

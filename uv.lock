@@ -227,7 +227,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "pypdfium2" },
     { name = "python-multipart" },
-    { name = "rapidocr" },
+    { name = "rapidocr", extra = ["rtl"] },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -255,7 +255,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.14.1" },
     { name = "pypdfium2", specifier = ">=5.14.0" },
     { name = "python-multipart", specifier = ">=0.0.32" },
-    { name = "rapidocr", specifier = ">=3.10.0" },
+    { name = "rapidocr", extras = ["rtl"], specifier = ">=3.10.0" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.54.0" },
 ]
 
@@ -898,6 +898,11 @@ dependencies = [
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/59/07/203065283bba0c5e9c10af3602dc25ab3e59ee54dc2d1d22c8faeabf5ed8/rapidocr-3.10.0-py3-none-any.whl", hash = "sha256:2fc34e26cd0f48514804a94f8832283039c7334076bff60768b1fed9ad068050", size = 27288134, upload-time = "2026-10-08T15:07:45.98Z" },
+]
+
+[package.optional-dependencies]
+rtl = [
+    { name = "python-bidi" },
 ]
 
 [[package]]
