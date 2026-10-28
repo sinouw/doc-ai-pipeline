@@ -1,0 +1,54 @@
+{
+  "id": "fr-005",
+  "label": {
+    "invoice_number": "FA-2026-5976",
+    "issue_date": "2026-01-29",
+    "due_date": "2026-03-30",
+    "seller_name": "Vallée",
+    "seller_vat_id": "FR38727560084",
+    "buyer_name": "Tessier S.A.R.L.",
+    "currency": "EUR",
+    "subtotal": "16163.41",
+    "vat_rate": "10",
+    "vat_amount": "1616.34",
+    "total": "17779.75",
+    "line_items": [
+      {
+        "description": "Hébergement cloud",
+        "quantity": "5",
+        "unit_price": "1216.00",
+        "amount": "6080.00"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "1",
+        "unit_price": "2124.13",
+        "amount": "2124.13"
+      },
+      {
+        "description": "Migration base de données",
+        "quantity": "3",
+        "unit_price": "1680.58",
+        "amount": "5041.74"
+      },
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "2",
+        "unit_price": "1458.77",
+        "amount": "2917.54"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "5, rue Arnaude Maillet, Brunel",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 1.55
+  }
+}

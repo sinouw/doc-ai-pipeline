@@ -1,0 +1,48 @@
+{
+  "id": "en-006",
+  "label": {
+    "invoice_number": "INV88000",
+    "issue_date": "2026-07-24",
+    "due_date": "2026-09-07",
+    "seller_name": "Lee LLC",
+    "seller_vat_id": "IE5771256J",
+    "buyer_name": "Turner-Smart",
+    "currency": "EUR",
+    "subtotal": "19392.80",
+    "vat_rate": "23",
+    "vat_amount": "4460.34",
+    "total": "23863.14",
+    "line_items": [
+      {
+        "description": "Documentation writing",
+        "quantity": "4",
+        "unit_price": "1050.93",
+        "amount": "4203.72"
+      },
+      {
+        "description": "Annual software licence",
+        "quantity": "12",
+        "unit_price": "473.16",
+        "amount": "5677.92"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "2377.79",
+        "amount": "9511.16"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "IE",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 1, Adrian Views, South Guy",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": -2.66
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "ar-005",
+  "label": {
+    "invoice_number": "F25622",
+    "issue_date": "2026-03-06",
+    "due_date": "2026-05-05",
+    "seller_name": "شركة حرب للخدمات",
+    "seller_vat_id": "680387900934324",
+    "buyer_name": "مؤسسة وهبة",
+    "currency": "MAD",
+    "subtotal": "2662.72",
+    "vat_rate": "10",
+    "vat_amount": "266.27",
+    "total": "2928.99",
+    "line_items": [
+      {
+        "description": "تكوين الفريق",
+        "quantity": "4",
+        "unit_price": "665.68",
+        "amount": "2662.72"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "84 نهج طسم, الدار البيضاء",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 0.45
+  }
+}

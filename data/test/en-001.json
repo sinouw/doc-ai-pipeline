@@ -1,0 +1,54 @@
+{
+  "id": "en-001",
+  "label": {
+    "invoice_number": "INV-2026-8425",
+    "issue_date": "2026-06-18",
+    "due_date": "2026-07-18",
+    "seller_name": "Nicholson PLC",
+    "seller_vat_id": "IE2680746T",
+    "buyer_name": "Francis LLC",
+    "currency": "EUR",
+    "subtotal": "50674.22",
+    "vat_rate": "23",
+    "vat_amount": "11655.07",
+    "total": "62329.29",
+    "line_items": [
+      {
+        "description": "Security audit",
+        "quantity": "2",
+        "unit_price": "1238.31",
+        "amount": "2476.62"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "12",
+        "unit_price": "1899.47",
+        "amount": "22793.64"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "1",
+        "unit_price": "2137.66",
+        "amount": "2137.66"
+      },
+      {
+        "description": "Documentation writing",
+        "quantity": "10",
+        "unit_price": "2326.63",
+        "amount": "23266.30"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "IE",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 42W, Wright Plain, New Roymouth",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 1.05
+  }
+}

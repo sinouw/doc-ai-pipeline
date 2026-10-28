@@ -1,0 +1,48 @@
+{
+  "id": "en-005",
+  "label": {
+    "invoice_number": "INV51732",
+    "issue_date": "2026-07-14",
+    "due_date": "2026-08-28",
+    "seller_name": "James-Atkinson",
+    "seller_vat_id": "GB734521351",
+    "buyer_name": "Ford-Moss",
+    "currency": "GBP",
+    "subtotal": "23841.42",
+    "vat_rate": "20",
+    "vat_amount": "4768.28",
+    "total": "28609.70",
+    "line_items": [
+      {
+        "description": "Graphic design",
+        "quantity": "12",
+        "unit_price": "1173.69",
+        "amount": "14084.28"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "1223.64",
+        "amount": "4894.56"
+      },
+      {
+        "description": "API module development",
+        "quantity": "2",
+        "unit_price": "2431.29",
+        "amount": "4862.58"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "02 Atkins Ville, Leonberg",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 0.93
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ar-007",
+  "label": {
+    "invoice_number": "F-2026-0378",
+    "issue_date": "2026-06-29",
+    "due_date": "2026-07-29",
+    "seller_name": "شركة طيء للخدمات",
+    "seller_vat_id": "1526976N/P/M/000",
+    "buyer_name": "مؤسسة بنو سعد بن ليث بن بكر",
+    "currency": "TND",
+    "subtotal": "28668.200",
+    "vat_rate": "19",
+    "vat_amount": "5446.958",
+    "total": "34115.158",
+    "line_items": [
+      {
+        "description": "نقل قاعدة البيانات",
+        "quantity": "12",
+        "unit_price": "508.170",
+        "amount": "6098.040"
+      },
+      {
+        "description": "تكوين الفريق",
+        "quantity": "10",
+        "unit_price": "1156.280",
+        "amount": "11562.800"
+      },
+      {
+        "description": "تصميم جرافيكي",
+        "quantity": "4",
+        "unit_price": "2046.150",
+        "amount": "8184.600"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "3",
+        "unit_price": "940.920",
+        "amount": "2822.760"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "TN",
+    "decimals": 3,
+    "number_style": "fr",
+    "seller_address": "153 نهج البقوم, تونس",
+    "date_variant": 1,
+    "arabic_digits": true,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 1.13
+  }
+}

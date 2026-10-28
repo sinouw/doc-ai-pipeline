@@ -1,0 +1,48 @@
+{
+  "id": "fr-006",
+  "label": {
+    "invoice_number": "FA77476",
+    "issue_date": "2026-03-07",
+    "due_date": "2026-05-06",
+    "seller_name": "Charrier",
+    "seller_vat_id": "FR58136030746",
+    "buyer_name": "Petit",
+    "currency": "EUR",
+    "subtotal": "6072.41",
+    "vat_rate": "20",
+    "vat_amount": "1214.48",
+    "total": "7296.89",
+    "line_items": [
+      {
+        "description": "Formation équipe (1 jour)",
+        "quantity": "1",
+        "unit_price": "1848.62",
+        "amount": "1848.62"
+      },
+      {
+        "description": "Migration base de données",
+        "quantity": "2",
+        "unit_price": "1772.83",
+        "amount": "3545.66"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "1",
+        "unit_price": "678.13",
+        "amount": "678.13"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "boulevard de Barbier, Macenec",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": -0.37
+  }
+}

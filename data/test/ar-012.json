@@ -1,0 +1,54 @@
+{
+  "id": "ar-012",
+  "label": {
+    "invoice_number": "F-2026-4694",
+    "issue_date": "2026-02-08",
+    "due_date": "2026-03-25",
+    "seller_name": "شركة نجيب للخدمات",
+    "seller_vat_id": "395413230514151",
+    "buyer_name": "مؤسسة اميوني",
+    "currency": "MAD",
+    "subtotal": "15140.16",
+    "vat_rate": "20",
+    "vat_amount": "3028.03",
+    "total": "18168.19",
+    "line_items": [
+      {
+        "description": "تطوير وحدة برمجية",
+        "quantity": "3",
+        "unit_price": "2262.16",
+        "amount": "6786.48"
+      },
+      {
+        "description": "نقل قاعدة البيانات",
+        "quantity": "1",
+        "unit_price": "1840.38",
+        "amount": "1840.38"
+      },
+      {
+        "description": "تكوين الفريق",
+        "quantity": "5",
+        "unit_price": "1218.94",
+        "amount": "6094.70"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "1",
+        "unit_price": "418.60",
+        "amount": "418.60"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "124 نهج العجمان, فاس",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.66
+  }
+}

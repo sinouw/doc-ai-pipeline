@@ -1,0 +1,42 @@
+{
+  "id": "en-005",
+  "label": {
+    "invoice_number": "INV25146",
+    "issue_date": "2026-05-03",
+    "due_date": "2026-07-02",
+    "seller_name": "Jackson LLC",
+    "seller_vat_id": "GB848475186",
+    "buyer_name": "Brown Group",
+    "currency": "GBP",
+    "subtotal": "45316.60",
+    "vat_rate": "20",
+    "vat_amount": "9063.32",
+    "total": "54379.92",
+    "line_items": [
+      {
+        "description": "API module development",
+        "quantity": "10",
+        "unit_price": "2402.51",
+        "amount": "24025.10"
+      },
+      {
+        "description": "Annual software licence",
+        "quantity": "10",
+        "unit_price": "2129.15",
+        "amount": "21291.50"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Studio 2, Howard Square, Lawrenceborough",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -2.39
+  }
+}

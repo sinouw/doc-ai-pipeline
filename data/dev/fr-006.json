@@ -1,0 +1,60 @@
+{
+  "id": "fr-006",
+  "label": {
+    "invoice_number": "FA42710",
+    "issue_date": "2026-08-20",
+    "due_date": "2026-09-04",
+    "seller_name": "Colas",
+    "seller_vat_id": "FR13608707754",
+    "buyer_name": "Camus et Fils",
+    "currency": "EUR",
+    "subtotal": "23108.18",
+    "vat_rate": "20",
+    "vat_amount": "4621.64",
+    "total": "27739.82",
+    "line_items": [
+      {
+        "description": "Développement module API",
+        "quantity": "2",
+        "unit_price": "684.03",
+        "amount": "1368.06"
+      },
+      {
+        "description": "Hébergement cloud",
+        "quantity": "2",
+        "unit_price": "1736.38",
+        "amount": "3472.76"
+      },
+      {
+        "description": "Formation équipe (1 jour)",
+        "quantity": "4",
+        "unit_price": "1714.22",
+        "amount": "6856.88"
+      },
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "4",
+        "unit_price": "1206.97",
+        "amount": "4827.88"
+      },
+      {
+        "description": "Licence logiciel annuelle",
+        "quantity": "5",
+        "unit_price": "1316.52",
+        "amount": "6582.60"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "32, chemin de Raymond, Marin",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": -1.25
+  }
+}

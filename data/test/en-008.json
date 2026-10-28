@@ -1,0 +1,60 @@
+{
+  "id": "en-008",
+  "label": {
+    "invoice_number": "INV-2026-7268",
+    "issue_date": "2026-02-02",
+    "due_date": "2026-04-03",
+    "seller_name": "Knight, Fox and Rees",
+    "seller_vat_id": "GB887672653",
+    "buyer_name": "Thompson, White and Young",
+    "currency": "GBP",
+    "subtotal": "31522.70",
+    "vat_rate": "20",
+    "vat_amount": "6304.54",
+    "total": "37827.24",
+    "line_items": [
+      {
+        "description": "Database migration",
+        "quantity": "10",
+        "unit_price": "612.04",
+        "amount": "6120.40"
+      },
+      {
+        "description": "Annual software licence",
+        "quantity": "1",
+        "unit_price": "1043.39",
+        "amount": "1043.39"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "12",
+        "unit_price": "1299.08",
+        "amount": "15588.96"
+      },
+      {
+        "description": "Graphic design",
+        "quantity": "5",
+        "unit_price": "1442.71",
+        "amount": "7213.55"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "1",
+        "unit_price": "1556.40",
+        "amount": "1556.40"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "3 Marcus Cape, Carpenterhaven",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -2.36
+  }
+}

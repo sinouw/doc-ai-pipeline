@@ -1,0 +1,42 @@
+{
+  "id": "en-009",
+  "label": {
+    "invoice_number": "INV-2026-0145",
+    "issue_date": "2026-06-06",
+    "due_date": "2026-08-05",
+    "seller_name": "Bates, Hart and Wood",
+    "seller_vat_id": "GB707317252",
+    "buyer_name": "Parkes, Thompson and Peters",
+    "currency": "GBP",
+    "subtotal": "3166.13",
+    "vat_rate": "20",
+    "vat_amount": "633.23",
+    "total": "3799.36",
+    "line_items": [
+      {
+        "description": "API module development",
+        "quantity": "2",
+        "unit_price": "1135.15",
+        "amount": "2270.30"
+      },
+      {
+        "description": "Monthly server maintenance",
+        "quantity": "1",
+        "unit_price": "895.83",
+        "amount": "895.83"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 8, Neil River, Harrisview",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 1.57
+  }
+}

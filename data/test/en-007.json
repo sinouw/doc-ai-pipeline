@@ -1,0 +1,48 @@
+{
+  "id": "en-007",
+  "label": {
+    "invoice_number": "INV47310",
+    "issue_date": "2026-05-02",
+    "due_date": "2026-07-01",
+    "seller_name": "Griffiths, Black and Martin",
+    "seller_vat_id": "GB654153347",
+    "buyer_name": "Chapman Inc",
+    "currency": "GBP",
+    "subtotal": "4580.76",
+    "vat_rate": "20",
+    "vat_amount": "916.15",
+    "total": "5496.91",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "1",
+        "unit_price": "387.76",
+        "amount": "387.76"
+      },
+      {
+        "description": "Security audit",
+        "quantity": "3",
+        "unit_price": "883.56",
+        "amount": "2650.68"
+      },
+      {
+        "description": "Graphic design",
+        "quantity": "4",
+        "unit_price": "385.58",
+        "amount": "1542.32"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Studio 5, Cook Stravenue, Lake Stephen",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 0.27
+  }
+}

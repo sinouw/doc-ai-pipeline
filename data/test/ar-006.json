@@ -1,0 +1,36 @@
+{
+  "id": "ar-006",
+  "label": {
+    "invoice_number": "F-2026-3824",
+    "issue_date": "2026-02-04",
+    "due_date": "2026-03-06",
+    "seller_name": "شركة جزار للخدمات",
+    "seller_vat_id": "493088866226275",
+    "buyer_name": "مؤسسة بنو عدي",
+    "currency": "MAD",
+    "subtotal": "1326.24",
+    "vat_rate": "20",
+    "vat_amount": "265.25",
+    "total": "1691.49",
+    "line_items": [
+      {
+        "description": "دعم فني",
+        "quantity": "1",
+        "unit_price": "1326.24",
+        "amount": "1326.24"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "93 نهج عرموني, الرباط",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": 2.54
+  }
+}

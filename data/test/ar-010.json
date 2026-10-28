@@ -1,0 +1,54 @@
+{
+  "id": "ar-010",
+  "label": {
+    "invoice_number": "F63188",
+    "issue_date": "2026-01-27",
+    "due_date": "2026-02-11",
+    "seller_name": "شركة الشرفاء للخدمات",
+    "seller_vat_id": "418395355238933",
+    "buyer_name": "مؤسسة كهلان",
+    "currency": "MAD",
+    "subtotal": "36161.52",
+    "vat_rate": "20",
+    "vat_amount": "7232.30",
+    "total": "43393.82",
+    "line_items": [
+      {
+        "description": "نقل قاعدة البيانات",
+        "quantity": "5",
+        "unit_price": "449.99",
+        "amount": "2249.95"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "5",
+        "unit_price": "809.81",
+        "amount": "4049.05"
+      },
+      {
+        "description": "تحرير الوثائق",
+        "quantity": "10",
+        "unit_price": "1504.30",
+        "amount": "15043.00"
+      },
+      {
+        "description": "استضافة سحابية",
+        "quantity": "12",
+        "unit_price": "1234.96",
+        "amount": "14819.52"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "36 نهج البامية, فاس",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.56
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "fr-001",
+  "label": {
+    "invoice_number": "FA68915",
+    "issue_date": "2026-05-11",
+    "due_date": "2026-05-26",
+    "seller_name": "Pierre SARL",
+    "seller_vat_id": "FR37752231581",
+    "buyer_name": "Maillet Simon SARL",
+    "currency": "EUR",
+    "subtotal": "13851.47",
+    "vat_rate": "10",
+    "vat_amount": "1385.15",
+    "total": "15236.62",
+    "line_items": [
+      {
+        "description": "Licence logiciel annuelle",
+        "quantity": "1",
+        "unit_price": "2356.77",
+        "amount": "2356.77"
+      },
+      {
+        "description": "Conception graphique",
+        "quantity": "10",
+        "unit_price": "1149.47",
+        "amount": "11494.70"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "rue de Payet, Bruneau",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.56
+  }
+}

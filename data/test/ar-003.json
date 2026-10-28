@@ -1,0 +1,48 @@
+{
+  "id": "ar-003",
+  "label": {
+    "invoice_number": "F-2026-3846",
+    "issue_date": "2026-07-20",
+    "due_date": "2026-09-18",
+    "seller_name": "شركة الحواش للخدمات",
+    "seller_vat_id": "7374136K/B/M/000",
+    "buyer_name": "مؤسسة قريش",
+    "currency": "TND",
+    "subtotal": "28380.700",
+    "vat_rate": "19",
+    "vat_amount": "5392.333",
+    "total": "33773.033",
+    "line_items": [
+      {
+        "description": "تدقيق أمني",
+        "quantity": "10",
+        "unit_price": "327.990",
+        "amount": "3279.900"
+      },
+      {
+        "description": "تطوير وحدة برمجية",
+        "quantity": "12",
+        "unit_price": "1042.100",
+        "amount": "12505.200"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "10",
+        "unit_price": "1259.560",
+        "amount": "12595.600"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "TN",
+    "decimals": 3,
+    "number_style": "fr",
+    "seller_address": "152 نهج الشعباني, سوسة",
+    "date_variant": 0,
+    "arabic_digits": true,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.09
+  }
+}

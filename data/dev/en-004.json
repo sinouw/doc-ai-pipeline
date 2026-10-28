@@ -1,0 +1,48 @@
+{
+  "id": "en-004",
+  "label": {
+    "invoice_number": "INV-2026-1200",
+    "issue_date": "2026-01-21",
+    "due_date": "2026-03-22",
+    "seller_name": "John-Powell",
+    "seller_vat_id": "GB498174104",
+    "buyer_name": "Hobbs Inc",
+    "currency": "GBP",
+    "subtotal": "16960.57",
+    "vat_rate": "20",
+    "vat_amount": "3392.11",
+    "total": "20352.68",
+    "line_items": [
+      {
+        "description": "Annual software licence",
+        "quantity": "3",
+        "unit_price": "1498.64",
+        "amount": "4495.92"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "1",
+        "unit_price": "714.20",
+        "amount": "714.20"
+      },
+      {
+        "description": "Database migration",
+        "quantity": "5",
+        "unit_price": "2350.09",
+        "amount": "11750.45"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 1, Pugh Ville, Peacockmouth",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -1.17
+  }
+}

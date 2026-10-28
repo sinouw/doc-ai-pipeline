@@ -1,0 +1,60 @@
+{
+  "id": "en-003",
+  "label": {
+    "invoice_number": "INV10398",
+    "issue_date": "2026-04-15",
+    "due_date": "2026-04-30",
+    "seller_name": "Gray PLC",
+    "seller_vat_id": "GB276742036",
+    "buyer_name": "Hunt-Thomas",
+    "currency": "GBP",
+    "subtotal": "12176.65",
+    "vat_rate": "20",
+    "vat_amount": "2435.33",
+    "total": "14611.98",
+    "line_items": [
+      {
+        "description": "Graphic design",
+        "quantity": "12",
+        "unit_price": "87.16",
+        "amount": "1045.92"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "1",
+        "unit_price": "1623.21",
+        "amount": "1623.21"
+      },
+      {
+        "description": "Database migration",
+        "quantity": "5",
+        "unit_price": "470.34",
+        "amount": "2351.70"
+      },
+      {
+        "description": "API module development",
+        "quantity": "10",
+        "unit_price": "684.23",
+        "amount": "6842.30"
+      },
+      {
+        "description": "Team training (1 day)",
+        "quantity": "2",
+        "unit_price": "156.76",
+        "amount": "313.52"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "215 Rogers Summit, Bentleymouth",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.74
+  }
+}

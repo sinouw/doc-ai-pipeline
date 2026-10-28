@@ -1,0 +1,54 @@
+{
+  "id": "en-012",
+  "label": {
+    "invoice_number": "INV-2026-2263",
+    "issue_date": "2026-07-20",
+    "due_date": "2026-08-04",
+    "seller_name": "Johnson-Taylor",
+    "seller_vat_id": "GB821743246",
+    "buyer_name": "Edwards, Bird and Long",
+    "currency": "GBP",
+    "subtotal": "8001.64",
+    "vat_rate": "20",
+    "vat_amount": "1600.33",
+    "total": "9601.97",
+    "line_items": [
+      {
+        "description": "Documentation writing",
+        "quantity": "2",
+        "unit_price": "1582.87",
+        "amount": "3165.74"
+      },
+      {
+        "description": "Monthly server maintenance",
+        "quantity": "5",
+        "unit_price": "115.05",
+        "amount": "575.25"
+      },
+      {
+        "description": "Security audit",
+        "quantity": "3",
+        "unit_price": "299.01",
+        "amount": "897.03"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "2",
+        "unit_price": "1681.81",
+        "amount": "3363.62"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 33u, Alexander Shore, Hazelport",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": -1.78
+  }
+}

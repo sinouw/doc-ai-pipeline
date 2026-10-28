@@ -1,0 +1,42 @@
+{
+  "id": "ar-004",
+  "label": {
+    "invoice_number": "F89443",
+    "issue_date": "2026-08-26",
+    "due_date": "2026-09-10",
+    "seller_name": "شركة الشامي للخدمات",
+    "seller_vat_id": "656828081414129",
+    "buyer_name": "مؤسسة ابو عيد",
+    "currency": "MAD",
+    "subtotal": "8763.45",
+    "vat_rate": "20",
+    "vat_amount": "1752.69",
+    "total": "10516.14",
+    "line_items": [
+      {
+        "description": "تكوين الفريق",
+        "quantity": "3",
+        "unit_price": "2483.59",
+        "amount": "7450.77"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "1",
+        "unit_price": "1312.68",
+        "amount": "1312.68"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "43 نهج التوتنجي, فاس",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 0.84
+  }
+}

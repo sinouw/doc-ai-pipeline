@@ -1,0 +1,48 @@
+{
+  "id": "fr-004",
+  "label": {
+    "invoice_number": "FA-2026-0990",
+    "issue_date": "2026-05-06",
+    "due_date": "2026-06-05",
+    "seller_name": "Sanchez Ribeiro SARL",
+    "seller_vat_id": "FR43883212526",
+    "buyer_name": "Marchal",
+    "currency": "EUR",
+    "subtotal": "546.32",
+    "vat_rate": "20",
+    "vat_amount": "109.26",
+    "total": "655.58",
+    "line_items": [
+      {
+        "description": "Hébergement cloud",
+        "quantity": "1",
+        "unit_price": "232.32",
+        "amount": "232.32"
+      },
+      {
+        "description": "Développement module API",
+        "quantity": "1",
+        "unit_price": "191.85",
+        "amount": "191.85"
+      },
+      {
+        "description": "Audit sécurité",
+        "quantity": "1",
+        "unit_price": "122.15",
+        "amount": "122.15"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "chemin Simone Deschamps, Lemonnier",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.89
+  }
+}

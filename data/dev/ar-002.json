@@ -1,0 +1,60 @@
+{
+  "id": "ar-002",
+  "label": {
+    "invoice_number": "F-2026-3388",
+    "issue_date": "2026-05-31",
+    "due_date": "2026-06-30",
+    "seller_name": "شركة ابو الحاج للخدمات",
+    "seller_vat_id": "487870652470690",
+    "buyer_name": "مؤسسة نسيبة",
+    "currency": "MAD",
+    "subtotal": "44273.08",
+    "vat_rate": "10",
+    "vat_amount": "4427.31",
+    "total": "48700.39",
+    "line_items": [
+      {
+        "description": "تحرير الوثائق",
+        "quantity": "2",
+        "unit_price": "142.29",
+        "amount": "284.58"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "3",
+        "unit_price": "677.14",
+        "amount": "2031.42"
+      },
+      {
+        "description": "تطوير وحدة برمجية",
+        "quantity": "1",
+        "unit_price": "1803.02",
+        "amount": "1803.02"
+      },
+      {
+        "description": "تصميم جرافيكي",
+        "quantity": "12",
+        "unit_price": "2133.78",
+        "amount": "25605.36"
+      },
+      {
+        "description": "نقل قاعدة البيانات",
+        "quantity": "10",
+        "unit_price": "1454.87",
+        "amount": "14548.70"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "182 نهج العفيفي, فاس",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 0.49
+  }
+}

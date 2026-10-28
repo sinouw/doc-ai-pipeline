@@ -1,0 +1,60 @@
+{
+  "id": "ar-002",
+  "label": {
+    "invoice_number": "F26788",
+    "issue_date": "2026-08-30",
+    "due_date": "2026-09-29",
+    "seller_name": "شركة الكثيري للخدمات",
+    "seller_vat_id": "670499232296197",
+    "buyer_name": "مؤسسة سرندح",
+    "currency": "MAD",
+    "subtotal": "25029.29",
+    "vat_rate": "20",
+    "vat_amount": "5005.86",
+    "total": "30035.15",
+    "line_items": [
+      {
+        "description": "تكوين الفريق",
+        "quantity": "3",
+        "unit_price": "835.72",
+        "amount": "2507.16"
+      },
+      {
+        "description": "ترخيص برنامج سنوي",
+        "quantity": "1",
+        "unit_price": "851.07",
+        "amount": "851.07"
+      },
+      {
+        "description": "صيانة الخادم الشهرية",
+        "quantity": "4",
+        "unit_price": "2092.20",
+        "amount": "8368.80"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "5",
+        "unit_price": "2171.50",
+        "amount": "10857.50"
+      },
+      {
+        "description": "تصميم جرافيكي",
+        "quantity": "12",
+        "unit_price": "203.73",
+        "amount": "2444.76"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "44 نهج عجرمة (العجارمة), الدار البيضاء",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 1.56
+  }
+}

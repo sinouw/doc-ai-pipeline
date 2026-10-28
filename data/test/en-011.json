@@ -1,0 +1,42 @@
+{
+  "id": "en-011",
+  "label": {
+    "invoice_number": "INV-2026-5582",
+    "issue_date": "2026-04-14",
+    "due_date": "2026-05-29",
+    "seller_name": "Conway LLC",
+    "seller_vat_id": "GB174487432",
+    "buyer_name": "Rose Ltd",
+    "currency": "GBP",
+    "subtotal": "10058.70",
+    "vat_rate": "20",
+    "vat_amount": "2011.74",
+    "total": "12070.44",
+    "line_items": [
+      {
+        "description": "Technical support",
+        "quantity": "4",
+        "unit_price": "2142.31",
+        "amount": "8569.24"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "1",
+        "unit_price": "1489.46",
+        "amount": "1489.46"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Studio 9, Alexander Points, Alexandrastad",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -1.88
+  }
+}

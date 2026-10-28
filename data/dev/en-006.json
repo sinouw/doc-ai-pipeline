@@ -1,0 +1,36 @@
+{
+  "id": "en-006",
+  "label": {
+    "invoice_number": "INV18413",
+    "issue_date": "2026-06-10",
+    "due_date": "2026-08-09",
+    "seller_name": "Russell, Forster and Wood",
+    "seller_vat_id": "IE9875428C",
+    "buyer_name": "Moore, Roberts and Smith",
+    "currency": "EUR",
+    "subtotal": "6219.54",
+    "vat_rate": "23",
+    "vat_amount": "1430.49",
+    "total": "7675.03",
+    "line_items": [
+      {
+        "description": "Team training (1 day)",
+        "quantity": "3",
+        "unit_price": "2073.18",
+        "amount": "6219.54"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "IE",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "843 Walsh Centers, Lake Lindsey",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": -1.12
+  }
+}

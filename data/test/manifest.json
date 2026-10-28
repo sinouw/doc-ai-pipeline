@@ -1,0 +1,218 @@
+[
+  {
+    "id": "fr-001",
+    "lang": "fr",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "fr-002",
+    "lang": "fr",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "fr-003",
+    "lang": "fr",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "fr-004",
+    "lang": "fr",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "fr-005",
+    "lang": "fr",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "fr-006",
+    "lang": "fr",
+    "severity": "heavy",
+    "injected_error": "totals_mismatch"
+  },
+  {
+    "id": "fr-007",
+    "lang": "fr",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "fr-008",
+    "lang": "fr",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "fr-009",
+    "lang": "fr",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "fr-010",
+    "lang": "fr",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "fr-011",
+    "lang": "fr",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "fr-012",
+    "lang": "fr",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "en-001",
+    "lang": "en",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "en-002",
+    "lang": "en",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "en-003",
+    "lang": "en",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "en-004",
+    "lang": "en",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "en-005",
+    "lang": "en",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "en-006",
+    "lang": "en",
+    "severity": "heavy",
+    "injected_error": "totals_mismatch"
+  },
+  {
+    "id": "en-007",
+    "lang": "en",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "en-008",
+    "lang": "en",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "en-009",
+    "lang": "en",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "en-010",
+    "lang": "en",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "en-011",
+    "lang": "en",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "en-012",
+    "lang": "en",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "ar-001",
+    "lang": "ar",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "ar-002",
+    "lang": "ar",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "ar-003",
+    "lang": "ar",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "ar-004",
+    "lang": "ar",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "ar-005",
+    "lang": "ar",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "ar-006",
+    "lang": "ar",
+    "severity": "heavy",
+    "injected_error": "totals_mismatch"
+  },
+  {
+    "id": "ar-007",
+    "lang": "ar",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "ar-008",
+    "lang": "ar",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "ar-009",
+    "lang": "ar",
+    "severity": "heavy",
+    "injected_error": null
+  },
+  {
+    "id": "ar-010",
+    "lang": "ar",
+    "severity": "light",
+    "injected_error": null
+  },
+  {
+    "id": "ar-011",
+    "lang": "ar",
+    "severity": "medium",
+    "injected_error": null
+  },
+  {
+    "id": "ar-012",
+    "lang": "ar",
+    "severity": "heavy",
+    "injected_error": null
+  }
+]

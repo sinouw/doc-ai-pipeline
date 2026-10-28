@@ -1,0 +1,36 @@
+{
+  "id": "fr-009",
+  "label": {
+    "invoice_number": "FA99825",
+    "issue_date": "2026-07-10",
+    "due_date": "2026-08-24",
+    "seller_name": "Lefèvre SARL",
+    "seller_vat_id": "FR12932512507",
+    "buyer_name": "Poirier Robin et Fils",
+    "currency": "EUR",
+    "subtotal": "6655.83",
+    "vat_rate": "20",
+    "vat_amount": "1331.17",
+    "total": "7987.00",
+    "line_items": [
+      {
+        "description": "Formation équipe (1 jour)",
+        "quantity": "3",
+        "unit_price": "2218.61",
+        "amount": "6655.83"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "44, avenue Jeanne Dijoux, Lopes-sur-Joubert",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 2.5
+  }
+}

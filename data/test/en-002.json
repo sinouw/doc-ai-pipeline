@@ -1,0 +1,54 @@
+{
+  "id": "en-002",
+  "label": {
+    "invoice_number": "INV-2026-6268",
+    "issue_date": "2026-04-07",
+    "due_date": "2026-06-06",
+    "seller_name": "Marshall PLC",
+    "seller_vat_id": "GB316834945",
+    "buyer_name": "Sanderson, Ellis and Young",
+    "currency": "GBP",
+    "subtotal": "54600.24",
+    "vat_rate": "20",
+    "vat_amount": "10920.05",
+    "total": "65520.29",
+    "line_items": [
+      {
+        "description": "Documentation writing",
+        "quantity": "1",
+        "unit_price": "59.92",
+        "amount": "59.92"
+      },
+      {
+        "description": "Graphic design",
+        "quantity": "10",
+        "unit_price": "2487.61",
+        "amount": "24876.10"
+      },
+      {
+        "description": "API module development",
+        "quantity": "3",
+        "unit_price": "1927.24",
+        "amount": "5781.72"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "10",
+        "unit_price": "2388.25",
+        "amount": "23882.50"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "2 Barnes Prairie, Patrickfort",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 1.58
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "en-001",
+  "label": {
+    "invoice_number": "INV-2026-6510",
+    "issue_date": "2026-04-26",
+    "due_date": "2026-05-11",
+    "seller_name": "Perry Ltd",
+    "seller_vat_id": "IE4230411P",
+    "buyer_name": "Hughes and Sons",
+    "currency": "EUR",
+    "subtotal": "18665.68",
+    "vat_rate": "23",
+    "vat_amount": "4293.11",
+    "total": "22958.79",
+    "line_items": [
+      {
+        "description": "Documentation writing",
+        "quantity": "12",
+        "unit_price": "600.09",
+        "amount": "7201.08"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "1",
+        "unit_price": "1050.20",
+        "amount": "1050.20"
+      },
+      {
+        "description": "Security audit",
+        "quantity": "5",
+        "unit_price": "1744.68",
+        "amount": "8723.40"
+      },
+      {
+        "description": "Cloud hosting",
+        "quantity": "10",
+        "unit_price": "169.10",
+        "amount": "1691.00"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "IE",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "232 Jones Dale, Coxhaven",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.49
+  }
+}

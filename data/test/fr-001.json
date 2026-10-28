@@ -1,0 +1,60 @@
+{
+  "id": "fr-001",
+  "label": {
+    "invoice_number": "FA97782",
+    "issue_date": "2026-02-13",
+    "due_date": "2026-03-30",
+    "seller_name": "Delannoy",
+    "seller_vat_id": "FR37129468689",
+    "buyer_name": "Payet Lenoir SA",
+    "currency": "EUR",
+    "subtotal": "56207.06",
+    "vat_rate": "10",
+    "vat_amount": "5620.71",
+    "total": "61827.77",
+    "line_items": [
+      {
+        "description": "Audit sécurité",
+        "quantity": "10",
+        "unit_price": "2121.77",
+        "amount": "21217.70"
+      },
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "5",
+        "unit_price": "1441.52",
+        "amount": "7207.60"
+      },
+      {
+        "description": "Développement module API",
+        "quantity": "12",
+        "unit_price": "1331.13",
+        "amount": "15973.56"
+      },
+      {
+        "description": "Migration base de données",
+        "quantity": "4",
+        "unit_price": "2377.46",
+        "amount": "9509.84"
+      },
+      {
+        "description": "Hébergement cloud",
+        "quantity": "1",
+        "unit_price": "2298.36",
+        "amount": "2298.36"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "20, rue Toussaint, Saint Édith",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.44
+  }
+}

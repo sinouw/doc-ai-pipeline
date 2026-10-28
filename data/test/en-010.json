@@ -1,0 +1,42 @@
+{
+  "id": "en-010",
+  "label": {
+    "invoice_number": "INV-2026-8063",
+    "issue_date": "2026-03-13",
+    "due_date": "2026-04-27",
+    "seller_name": "Marsh, Robinson and Smith",
+    "seller_vat_id": "IE3659688U",
+    "buyer_name": "Cook, Lucas and Watts",
+    "currency": "EUR",
+    "subtotal": "7950.18",
+    "vat_rate": "23",
+    "vat_amount": "1828.54",
+    "total": "9778.72",
+    "line_items": [
+      {
+        "description": "Annual software licence",
+        "quantity": "3",
+        "unit_price": "2106.76",
+        "amount": "6320.28"
+      },
+      {
+        "description": "Graphic design",
+        "quantity": "1",
+        "unit_price": "1629.90",
+        "amount": "1629.90"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "IE",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 4, Warren Mountains, Cookburgh",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.95
+  }
+}

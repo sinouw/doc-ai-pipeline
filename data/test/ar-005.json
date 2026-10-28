@@ -1,0 +1,36 @@
+{
+  "id": "ar-005",
+  "label": {
+    "invoice_number": "F15808",
+    "issue_date": "2026-09-18",
+    "due_date": "2026-10-18",
+    "seller_name": "شركة الداودي للخدمات",
+    "seller_vat_id": "188966632290095",
+    "buyer_name": "مؤسسة همدان",
+    "currency": "MAD",
+    "subtotal": "2275.09",
+    "vat_rate": "10",
+    "vat_amount": "227.51",
+    "total": "2502.60",
+    "line_items": [
+      {
+        "description": "استضافة سحابية",
+        "quantity": "1",
+        "unit_price": "2275.09",
+        "amount": "2275.09"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "123 نهج ارناؤوط, الدار البيضاء",
+    "date_variant": 2,
+    "arabic_digits": true,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 1.92
+  }
+}

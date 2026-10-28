@@ -1,0 +1,48 @@
+{
+  "id": "ar-008",
+  "label": {
+    "invoice_number": "F-2026-4035",
+    "issue_date": "2026-07-06",
+    "due_date": "2026-09-04",
+    "seller_name": "شركة الخطيب بني جماعة الكناني للخدمات",
+    "seller_vat_id": "8742037W/P/C/000",
+    "buyer_name": "مؤسسة صيداوي",
+    "currency": "TND",
+    "subtotal": "24967.380",
+    "vat_rate": "7",
+    "vat_amount": "1747.717",
+    "total": "26715.097",
+    "line_items": [
+      {
+        "description": "استضافة سحابية",
+        "quantity": "3",
+        "unit_price": "1973.260",
+        "amount": "5919.780"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "10",
+        "unit_price": "322.150",
+        "amount": "3221.500"
+      },
+      {
+        "description": "ترخيص برنامج سنوي",
+        "quantity": "10",
+        "unit_price": "1582.610",
+        "amount": "15826.100"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "TN",
+    "decimals": 3,
+    "number_style": "fr",
+    "seller_address": "183 نهج طزيز, صفاقس",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -0.57
+  }
+}

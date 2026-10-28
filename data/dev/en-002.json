@@ -1,0 +1,42 @@
+{
+  "id": "en-002",
+  "label": {
+    "invoice_number": "INV-2026-2811",
+    "issue_date": "2026-04-22",
+    "due_date": "2026-06-21",
+    "seller_name": "Moore-Kennedy",
+    "seller_vat_id": "GB371648731",
+    "buyer_name": "Edwards Inc",
+    "currency": "GBP",
+    "subtotal": "20207.64",
+    "vat_rate": "20",
+    "vat_amount": "4041.53",
+    "total": "24249.17",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "3",
+        "unit_price": "1518.08",
+        "amount": "4554.24"
+      },
+      {
+        "description": "Annual software licence",
+        "quantity": "10",
+        "unit_price": "1565.34",
+        "amount": "15653.40"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Flat 46, Stewart Ports, Port Billy",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 1.93
+  }
+}

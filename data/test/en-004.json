@@ -1,0 +1,48 @@
+{
+  "id": "en-004",
+  "label": {
+    "invoice_number": "INV80591",
+    "issue_date": "2026-09-13",
+    "due_date": "2026-10-13",
+    "seller_name": "Brookes-Ali",
+    "seller_vat_id": "GB369828100",
+    "buyer_name": "Clarke-Thornton",
+    "currency": "GBP",
+    "subtotal": "21990.57",
+    "vat_rate": "20",
+    "vat_amount": "4398.11",
+    "total": "26388.68",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "4",
+        "unit_price": "1727.87",
+        "amount": "6911.48"
+      },
+      {
+        "description": "Team training (1 day)",
+        "quantity": "10",
+        "unit_price": "1373.12",
+        "amount": "13731.20"
+      },
+      {
+        "description": "Database migration",
+        "quantity": "1",
+        "unit_price": "1347.89",
+        "amount": "1347.89"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "31 Kathryn Knolls, Alexandraberg",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 1.08
+  }
+}

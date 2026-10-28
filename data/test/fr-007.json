@@ -1,0 +1,48 @@
+{
+  "id": "fr-007",
+  "label": {
+    "invoice_number": "FA-2026-4109",
+    "issue_date": "2026-08-16",
+    "due_date": "2026-08-31",
+    "seller_name": "Mendès SARL",
+    "seller_vat_id": "FR50649843688",
+    "buyer_name": "Martineau S.A.",
+    "currency": "EUR",
+    "subtotal": "11693.46",
+    "vat_rate": "10",
+    "vat_amount": "1169.35",
+    "total": "12862.81",
+    "line_items": [
+      {
+        "description": "Support technique",
+        "quantity": "2",
+        "unit_price": "108.05",
+        "amount": "216.10"
+      },
+      {
+        "description": "Formation équipe (1 jour)",
+        "quantity": "10",
+        "unit_price": "1086.45",
+        "amount": "10864.50"
+      },
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "2",
+        "unit_price": "306.43",
+        "amount": "612.86"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "2, rue Thibaut Seguin, Descamps",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.96
+  }
+}

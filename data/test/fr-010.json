@@ -1,0 +1,42 @@
+{
+  "id": "fr-010",
+  "label": {
+    "invoice_number": "FA-2026-5011",
+    "issue_date": "2026-01-13",
+    "due_date": "2026-02-27",
+    "seller_name": "Jacques Caron SA",
+    "seller_vat_id": "FR46909150909",
+    "buyer_name": "Denis",
+    "currency": "EUR",
+    "subtotal": "23490.94",
+    "vat_rate": "10",
+    "vat_amount": "2349.09",
+    "total": "25840.03",
+    "line_items": [
+      {
+        "description": "Licence logiciel annuelle",
+        "quantity": "10",
+        "unit_price": "1891.75",
+        "amount": "18917.50"
+      },
+      {
+        "description": "Hébergement cloud",
+        "quantity": "12",
+        "unit_price": "381.12",
+        "amount": "4573.44"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "chemin de Maréchal, Gauthier",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": -0.91
+  }
+}

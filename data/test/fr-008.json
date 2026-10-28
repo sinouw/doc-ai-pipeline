@@ -1,0 +1,42 @@
+{
+  "id": "fr-008",
+  "label": {
+    "invoice_number": "FA50596",
+    "issue_date": "2026-09-24",
+    "due_date": "2026-11-23",
+    "seller_name": "Roy SA",
+    "seller_vat_id": "FR04548841679",
+    "buyer_name": "Louis Imbert SA",
+    "currency": "EUR",
+    "subtotal": "3863.88",
+    "vat_rate": "20",
+    "vat_amount": "772.78",
+    "total": "4636.66",
+    "line_items": [
+      {
+        "description": "Support technique",
+        "quantity": "1",
+        "unit_price": "1538.25",
+        "amount": "1538.25"
+      },
+      {
+        "description": "Migration base de données",
+        "quantity": "1",
+        "unit_price": "2325.63",
+        "amount": "2325.63"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "8, chemin de Clément, Sainte AndréBourg",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 2.19
+  }
+}

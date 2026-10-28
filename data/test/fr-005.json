@@ -1,0 +1,48 @@
+{
+  "id": "fr-005",
+  "label": {
+    "invoice_number": "FA10549",
+    "issue_date": "2026-05-07",
+    "due_date": "2026-06-06",
+    "seller_name": "Lucas",
+    "seller_vat_id": "FR64531487429",
+    "buyer_name": "Chevalier",
+    "currency": "EUR",
+    "subtotal": "15127.71",
+    "vat_rate": "20",
+    "vat_amount": "3025.54",
+    "total": "18153.25",
+    "line_items": [
+      {
+        "description": "Hébergement cloud",
+        "quantity": "4",
+        "unit_price": "1191.11",
+        "amount": "4764.44"
+      },
+      {
+        "description": "Conception graphique",
+        "quantity": "1",
+        "unit_price": "2379.59",
+        "amount": "2379.59"
+      },
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "4",
+        "unit_price": "1995.92",
+        "amount": "7983.68"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "2, chemin Masson, PerretVille",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -0.14
+  }
+}

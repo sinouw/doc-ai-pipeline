@@ -1,0 +1,42 @@
+{
+  "id": "ar-003",
+  "label": {
+    "invoice_number": "F51581",
+    "issue_date": "2026-01-04",
+    "due_date": "2026-02-03",
+    "seller_name": "شركة غنيم للخدمات",
+    "seller_vat_id": "5617515X/B/M/000",
+    "buyer_name": "مؤسسة أولاد زيان",
+    "currency": "TND",
+    "subtotal": "16242.660",
+    "vat_rate": "19",
+    "vat_amount": "3086.105",
+    "total": "19328.765",
+    "line_items": [
+      {
+        "description": "استضافة سحابية",
+        "quantity": "12",
+        "unit_price": "604.980",
+        "amount": "7259.760"
+      },
+      {
+        "description": "تصميم جرافيكي",
+        "quantity": "10",
+        "unit_price": "898.290",
+        "amount": "8982.900"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "TN",
+    "decimals": 3,
+    "number_style": "fr",
+    "seller_address": "60 نهج طيء, صفاقس",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": -1.05
+  }
+}

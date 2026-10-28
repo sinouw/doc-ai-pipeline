@@ -1,0 +1,60 @@
+{
+  "id": "fr-002",
+  "label": {
+    "invoice_number": "FA-2026-2896",
+    "issue_date": "2026-04-29",
+    "due_date": "2026-05-14",
+    "seller_name": "Bernard",
+    "seller_vat_id": "FR78669465116",
+    "buyer_name": "Toussaint et Fils",
+    "currency": "EUR",
+    "subtotal": "60173.81",
+    "vat_rate": "20",
+    "vat_amount": "12034.76",
+    "total": "72208.57",
+    "line_items": [
+      {
+        "description": "Rédaction documentation",
+        "quantity": "5",
+        "unit_price": "2085.27",
+        "amount": "10426.35"
+      },
+      {
+        "description": "Hébergement cloud",
+        "quantity": "5",
+        "unit_price": "963.66",
+        "amount": "4818.30"
+      },
+      {
+        "description": "Développement module API",
+        "quantity": "12",
+        "unit_price": "437.53",
+        "amount": "5250.36"
+      },
+      {
+        "description": "Audit sécurité",
+        "quantity": "10",
+        "unit_price": "1889.72",
+        "amount": "18897.20"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "12",
+        "unit_price": "1731.80",
+        "amount": "20781.60"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "20, avenue Odette Pages, Perrin",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 2.21
+  }
+}

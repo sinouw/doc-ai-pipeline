@@ -1,0 +1,60 @@
+{
+  "id": "ar-004",
+  "label": {
+    "invoice_number": "F76885",
+    "issue_date": "2026-05-20",
+    "due_date": "2026-06-04",
+    "seller_name": "شركة بنو أسد للخدمات",
+    "seller_vat_id": "241881262048470",
+    "buyer_name": "مؤسسة حرب",
+    "currency": "MAD",
+    "subtotal": "7602.15",
+    "vat_rate": "10",
+    "vat_amount": "760.22",
+    "total": "8362.37",
+    "line_items": [
+      {
+        "description": "ترخيص برنامج سنوي",
+        "quantity": "1",
+        "unit_price": "1269.45",
+        "amount": "1269.45"
+      },
+      {
+        "description": "تصميم جرافيكي",
+        "quantity": "1",
+        "unit_price": "354.02",
+        "amount": "354.02"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "2",
+        "unit_price": "556.30",
+        "amount": "1112.60"
+      },
+      {
+        "description": "تطوير وحدة برمجية",
+        "quantity": "5",
+        "unit_price": "647.39",
+        "amount": "3236.95"
+      },
+      {
+        "description": "صيانة الخادم الشهرية",
+        "quantity": "1",
+        "unit_price": "1629.13",
+        "amount": "1629.13"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "60 نهج المظفر, فاس",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 1.01
+  }
+}

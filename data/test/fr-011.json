@@ -1,0 +1,48 @@
+{
+  "id": "fr-011",
+  "label": {
+    "invoice_number": "FA15659",
+    "issue_date": "2026-02-23",
+    "due_date": "2026-03-10",
+    "seller_name": "Pons Carlier SARL",
+    "seller_vat_id": "FR18628411495",
+    "buyer_name": "Maillet Boulanger SA",
+    "currency": "EUR",
+    "subtotal": "52535.28",
+    "vat_rate": "10",
+    "vat_amount": "5253.53",
+    "total": "57788.81",
+    "line_items": [
+      {
+        "description": "Conception graphique",
+        "quantity": "4",
+        "unit_price": "1284.30",
+        "amount": "5137.20"
+      },
+      {
+        "description": "Développement module API",
+        "quantity": "12",
+        "unit_price": "1901.24",
+        "amount": "22814.88"
+      },
+      {
+        "description": "Hébergement cloud",
+        "quantity": "10",
+        "unit_price": "2458.32",
+        "amount": "24583.20"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "413, chemin Bruneau, Bernard",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": -1.4
+  }
+}

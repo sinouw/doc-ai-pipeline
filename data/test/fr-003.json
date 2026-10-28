@@ -1,0 +1,54 @@
+{
+  "id": "fr-003",
+  "label": {
+    "invoice_number": "FA-2026-3635",
+    "issue_date": "2026-08-22",
+    "due_date": "2026-10-21",
+    "seller_name": "Bouvet SARL",
+    "seller_vat_id": "FR72109042861",
+    "buyer_name": "Moreau",
+    "currency": "EUR",
+    "subtotal": "27870.08",
+    "vat_rate": "10",
+    "vat_amount": "2787.01",
+    "total": "30657.09",
+    "line_items": [
+      {
+        "description": "Formation équipe (1 jour)",
+        "quantity": "3",
+        "unit_price": "1296.63",
+        "amount": "3889.89"
+      },
+      {
+        "description": "Migration base de données",
+        "quantity": "5",
+        "unit_price": "2463.82",
+        "amount": "12319.10"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "1",
+        "unit_price": "2070.94",
+        "amount": "2070.94"
+      },
+      {
+        "description": "Développement module API",
+        "quantity": "5",
+        "unit_price": "1918.03",
+        "amount": "9590.15"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "67, chemin Susanne Legrand, Lévy-sur-Meyer",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": -3.15
+  }
+}

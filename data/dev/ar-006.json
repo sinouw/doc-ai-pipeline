@@ -1,0 +1,36 @@
+{
+  "id": "ar-006",
+  "label": {
+    "invoice_number": "F-2026-3356",
+    "issue_date": "2026-04-17",
+    "due_date": "2026-06-16",
+    "seller_name": "شركة همدان للخدمات",
+    "seller_vat_id": "421859468585017",
+    "buyer_name": "مؤسسة بديرية",
+    "currency": "MAD",
+    "subtotal": "1444.43",
+    "vat_rate": "20",
+    "vat_amount": "288.89",
+    "total": "1758.32",
+    "line_items": [
+      {
+        "description": "نقل قاعدة البيانات",
+        "quantity": "1",
+        "unit_price": "1444.43",
+        "amount": "1444.43"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "108 نهج السروري, الرباط",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": "totals_mismatch",
+    "severity": "heavy",
+    "skew_degrees": -1.29
+  }
+}

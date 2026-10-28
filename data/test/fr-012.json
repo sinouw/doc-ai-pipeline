@@ -1,0 +1,36 @@
+{
+  "id": "fr-012",
+  "label": {
+    "invoice_number": "FA29202",
+    "issue_date": "2026-07-02",
+    "due_date": "2026-08-01",
+    "seller_name": "Lopez SARL",
+    "seller_vat_id": "FR42519397180",
+    "buyer_name": "Faure",
+    "currency": "EUR",
+    "subtotal": "1583.88",
+    "vat_rate": "20",
+    "vat_amount": "316.78",
+    "total": "1900.66",
+    "line_items": [
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "2",
+        "unit_price": "791.94",
+        "amount": "1583.88"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "79, avenue Jean, Humbert",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.08
+  }
+}

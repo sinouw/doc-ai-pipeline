@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>docai review</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>docai <span>invoice review</span></h1>
+    <form id="upload">
+      <input type="file" name="file" accept="application/pdf" required>
+      <select name="method">
+        <option value="hybrid">hybrid (image + OCR)</option>
+        <option value="vlm">vision LLM</option>
+        <option value="ocr_llm">OCR + LLM</option>
+        <option value="rules">OCR rules (no LLM)</option>
+      </select>
+      <button type="submit">Process</button>
+      <span id="upload-status" role="status"></span>
+    </form>
+    <label class="reviewer">Reviewer <input id="reviewer" value="reviewer" maxlength="80"></label>
+  </header>
+  <main>
+    <aside>
+      <h2>Review queue <span id="queue-count"></span></h2>
+      <ul id="queue"></ul>
+      <h2>Documents</h2>
+      <ul id="documents"></ul>
+    </aside>
+    <section id="detail">
+      <p class="empty">Upload a scanned invoice or pick a document.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

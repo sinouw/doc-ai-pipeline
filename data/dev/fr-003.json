@@ -1,0 +1,48 @@
+{
+  "id": "fr-003",
+  "label": {
+    "invoice_number": "FA-2026-8206",
+    "issue_date": "2026-03-03",
+    "due_date": "2026-04-17",
+    "seller_name": "Boutin",
+    "seller_vat_id": "FR56813762923",
+    "buyer_name": "Prévost",
+    "currency": "EUR",
+    "subtotal": "18178.70",
+    "vat_rate": "10",
+    "vat_amount": "1817.87",
+    "total": "19996.57",
+    "line_items": [
+      {
+        "description": "Migration base de données",
+        "quantity": "1",
+        "unit_price": "1273.88",
+        "amount": "1273.88"
+      },
+      {
+        "description": "Conception graphique",
+        "quantity": "3",
+        "unit_price": "1964.64",
+        "amount": "5893.92"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "10",
+        "unit_price": "1101.09",
+        "amount": "11010.90"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "13, rue de Vallée, Sainte Tristandan",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.06
+  }
+}

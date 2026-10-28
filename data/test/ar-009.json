@@ -1,0 +1,48 @@
+{
+  "id": "ar-009",
+  "label": {
+    "invoice_number": "F-2026-7392",
+    "issue_date": "2026-03-31",
+    "due_date": "2026-05-30",
+    "seller_name": "شركة شرف للخدمات",
+    "seller_vat_id": "903711055956251",
+    "buyer_name": "مؤسسة بني عطية",
+    "currency": "MAD",
+    "subtotal": "16977.24",
+    "vat_rate": "10",
+    "vat_amount": "1697.72",
+    "total": "18674.96",
+    "line_items": [
+      {
+        "description": "استضافة سحابية",
+        "quantity": "4",
+        "unit_price": "1772.16",
+        "amount": "7088.64"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "5",
+        "unit_price": "1764.57",
+        "amount": "8822.85"
+      },
+      {
+        "description": "تكوين الفريق",
+        "quantity": "1",
+        "unit_price": "1065.75",
+        "amount": "1065.75"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "MA",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "38 نهج المملوك, الرباط",
+    "date_variant": 2,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 3.35
+  }
+}

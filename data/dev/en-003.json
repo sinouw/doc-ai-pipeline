@@ -1,0 +1,60 @@
+{
+  "id": "en-003",
+  "label": {
+    "invoice_number": "INV-2026-4367",
+    "issue_date": "2026-08-08",
+    "due_date": "2026-09-07",
+    "seller_name": "Carpenter Group",
+    "seller_vat_id": "GB598455575",
+    "buyer_name": "Garner Ltd",
+    "currency": "GBP",
+    "subtotal": "8674.24",
+    "vat_rate": "20",
+    "vat_amount": "1734.85",
+    "total": "10409.09",
+    "line_items": [
+      {
+        "description": "Cloud hosting",
+        "quantity": "3",
+        "unit_price": "186.23",
+        "amount": "558.69"
+      },
+      {
+        "description": "Documentation writing",
+        "quantity": "1",
+        "unit_price": "236.98",
+        "amount": "236.98"
+      },
+      {
+        "description": "Graphic design",
+        "quantity": "2",
+        "unit_price": "459.84",
+        "amount": "919.68"
+      },
+      {
+        "description": "Technical support",
+        "quantity": "2",
+        "unit_price": "2403.09",
+        "amount": "4806.18"
+      },
+      {
+        "description": "Team training (1 day)",
+        "quantity": "3",
+        "unit_price": "717.57",
+        "amount": "2152.71"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "en",
+    "country": "GB",
+    "decimals": 2,
+    "number_style": "en",
+    "seller_address": "Studio 6, Cross Streets, East Ronald",
+    "date_variant": 0,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "heavy",
+    "skew_degrees": 2.94
+  }
+}

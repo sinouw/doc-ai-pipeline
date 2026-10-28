@@ -1,0 +1,54 @@
+{
+  "id": "fr-002",
+  "label": {
+    "invoice_number": "FA11206",
+    "issue_date": "2026-01-12",
+    "due_date": "2026-01-27",
+    "seller_name": "Parent Roussel S.A.",
+    "seller_vat_id": "FR75334914346",
+    "buyer_name": "Renault Jacquet S.A.S.",
+    "currency": "EUR",
+    "subtotal": "55426.50",
+    "vat_rate": "20",
+    "vat_amount": "11085.30",
+    "total": "66511.80",
+    "line_items": [
+      {
+        "description": "Maintenance serveur mensuelle",
+        "quantity": "12",
+        "unit_price": "2476.96",
+        "amount": "29723.52"
+      },
+      {
+        "description": "Rédaction documentation",
+        "quantity": "12",
+        "unit_price": "1464.28",
+        "amount": "17571.36"
+      },
+      {
+        "description": "Audit sécurité",
+        "quantity": "3",
+        "unit_price": "921.23",
+        "amount": "2763.69"
+      },
+      {
+        "description": "Support technique",
+        "quantity": "3",
+        "unit_price": "1789.31",
+        "amount": "5367.93"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "fr",
+    "country": "FR",
+    "decimals": 2,
+    "number_style": "fr",
+    "seller_address": "chemin Torres, MarchandBourg",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "medium",
+    "skew_degrees": 2.22
+  }
+}

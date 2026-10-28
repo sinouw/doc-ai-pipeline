@@ -1,0 +1,48 @@
+{
+  "id": "ar-001",
+  "label": {
+    "invoice_number": "F38101",
+    "issue_date": "2026-03-04",
+    "due_date": "2026-04-18",
+    "seller_name": "شركة بديرية للخدمات",
+    "seller_vat_id": "8510662Q/D/C/000",
+    "buyer_name": "مؤسسة بنو كلب",
+    "currency": "TND",
+    "subtotal": "28209.200",
+    "vat_rate": "7",
+    "vat_amount": "1974.644",
+    "total": "30183.844",
+    "line_items": [
+      {
+        "description": "تحرير الوثائق",
+        "quantity": "10",
+        "unit_price": "2039.220",
+        "amount": "20392.200"
+      },
+      {
+        "description": "دعم فني",
+        "quantity": "2",
+        "unit_price": "1832.430",
+        "amount": "3664.860"
+      },
+      {
+        "description": "تدقيق أمني",
+        "quantity": "2",
+        "unit_price": "2076.070",
+        "amount": "4152.140"
+      }
+    ]
+  },
+  "meta": {
+    "lang": "ar",
+    "country": "TN",
+    "decimals": 3,
+    "number_style": "fr",
+    "seller_address": "77 نهج السادة الراويون, سوسة",
+    "date_variant": 1,
+    "arabic_digits": false,
+    "injected_error": null,
+    "severity": "light",
+    "skew_degrees": 0.19
+  }
+}
