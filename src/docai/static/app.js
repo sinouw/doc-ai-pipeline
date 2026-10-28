@@ -62,7 +62,8 @@ function fieldRow(field) {
     el("th", {}, field.name),
     valueCell,
     el("td", { class: "conf", title: JSON.stringify(field.signals) }, field.confidence.toFixed(2)),
-    el("td", { class: "status" }, field.status.replace("_", " "), el("div", { class: "issues" }, field.issues.join("; "))));
+    el("td", { class: "status" }, field.status.replace("_", " "),
+      editing ? el("div", { class: "issues" }, field.issues.join("; ")) : ""));
 }
 
 async function showDocument(id) {

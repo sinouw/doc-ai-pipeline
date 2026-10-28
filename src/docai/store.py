@@ -166,7 +166,7 @@ class Store:
                 (field_id, row["document_id"], row["name"], row["value_json"], new_json, action, reviewer, _now()),
             )
             conn.execute(
-                "UPDATE fields SET value_json = ?, status = ?, confidence = 1.0 WHERE id = ?",
+                "UPDATE fields SET value_json = ?, status = ?, confidence = 1.0, issues_json = '[]' WHERE id = ?",
                 (new_json, FieldStatus.REVIEWED.value, field_id),
             )
         field = self.get_field(field_id)

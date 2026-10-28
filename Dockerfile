@@ -11,7 +11,7 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends libgl1 libglib2.0-0 libgomp1 \
  && rm -rf /var/lib/apt/lists/*
 
-COPY --from=ghcr.io/astral-sh/uv:0.9 /uv /usr/local/bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.13.4 /uv /usr/local/bin/uv
 
 WORKDIR /app
 COPY pyproject.toml uv.lock .python-version README.md ./

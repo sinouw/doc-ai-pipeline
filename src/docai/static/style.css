@@ -25,6 +25,7 @@ td, th { padding: 6px; border-bottom: 1px solid var(--line); text-align: left; v
 tr.needs_review { background: var(--warn-bg); }
 tr.reviewed td.status { color: var(--ok); }
 .conf { font-variant-numeric: tabular-nums; }
+td.status { min-width: 140px; }
 .issues { color: var(--bad); font-size: 12px; }
 td input, td textarea { width: 100%; }
 td textarea { min-height: 90px; font-family: ui-monospace, monospace; font-size: 12px; }
