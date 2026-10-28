@@ -43,10 +43,15 @@ def test_summarize_routing_and_cost(fr_invoice: Invoice) -> None:
     assert out["exact_match"] == 0.0
     assert out["cost_usd_per_page"] == 0.0036  # 2000 * 0.8e-6 + 500 * 4e-6
     assert out["latency_excl_rate_limit_ms_per_page"]["p50"] == 4000
-    assert out["review_routing"]["0.8"] == {"review_rate": 8.3, "auto_accepted_accuracy": 100.0, "errors_caught": 100.0, "errors_missed": 0}
+    assert out["review_routing"]["0.8"] == {
+        "review_rate": 8.3,
+        "auto_accepted_accuracy": 100.0,
+        "errors_caught": 100.0,
+        "errors_missed": 0,
+    }
 
 
-def _text_page() -> np.ndarray:  # type: ignore[type-arg]
+def _text_page() -> np.ndarray:
     img = Image.new("L", (1000, 1000), 255)
     draw = ImageDraw.Draw(img)
     for y in range(100, 900, 40):

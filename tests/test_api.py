@@ -70,7 +70,9 @@ def test_review_queue_and_confirm(client: TestClient, tmp_path: Path) -> None:
     doc = upload(client)
     store = Store(tmp_path)
     with store._tx() as conn:  # force one field into the queue
-        conn.execute("UPDATE fields SET status = 'needs_review', confidence = 0.3 WHERE document_id = ? AND name = 'total'", (doc["id"],))
+        conn.execute(
+            "UPDATE fields SET status = 'needs_review', confidence = 0.3 WHERE document_id = ? AND name = 'total'", (doc["id"],)
+        )
     queue = client.get("/api/review").json()
     assert [f["name"] for f in queue] == ["total"]
     confirmed = client.post(f"/api/fields/{queue[0]['id']}/resolve", json={"reviewer": "amina", "action": "confirm"})

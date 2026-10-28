@@ -132,6 +132,7 @@ def main() -> None:
     parser.add_argument("--limit", type=int, default=0)
     parser.add_argument("--per-language", type=int, default=0, help="only the first N documents of each language")
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument("--token-budget", type=int, default=0, help="stop once this invocation has used this many LLM tokens")
     parser.add_argument("--summarize", action="store_true", help="only recompute summary.json from records.jsonl")
     args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s", stream=sys.stderr)
@@ -193,9 +194,13 @@ def main() -> None:
         labels = labels[: args.limit]
 
     quota_hit = None
+    spent = 0
     with records_path.open("a", encoding="utf-8") as sink:
         for i, label_path in enumerate(labels, 1):
             if quota_hit:
+                break
+            if args.token_budget and spent >= args.token_budget:
+                quota_hit = f"token budget of {args.token_budget} reached ({spent} used)"
                 break
             doc_meta = json.loads(label_path.read_text(encoding="utf-8"))
             todo = [m for m in methods if (doc_meta["id"], m) not in done]
@@ -215,14 +220,18 @@ def main() -> None:
                     break
                 sink.write(json.dumps(record, ensure_ascii=False) + "\n")
                 sink.flush()
+                used = record["usage"]["prompt_tokens"] + record["usage"]["completion_tokens"]
+                spent += used
                 score = sum(record["correct"].values())
                 logging.info(
-                    "[%d/%d] %s %-9s %2d/12 fields%s",
+                    "[%d/%d] %s %-9s %2d/12 fields, %d tokens (%d this run)%s",
                     i,
                     len(labels),
                     doc_meta["id"],
                     method,
                     score,
+                    used,
+                    spent,
                     f" ERROR {record['error'][:80]}" if record["error"] else "",
                 )
             logging.info("%s done in %.1fs", doc_meta["id"], time.perf_counter() - t0)
@@ -232,6 +241,7 @@ def main() -> None:
     invocation["peak_rss_mb"] = round(peak)
     invocation["finished_at"] = datetime.now(UTC).isoformat(timespec="seconds")
     invocation["stopped_on_quota"] = quota_hit
+    invocation["llm_tokens"] = spent
     run_file.write_text(json.dumps(run_info, indent=2) + "\n")
     payload = write_summary(args.out, model)
     if quota_hit:

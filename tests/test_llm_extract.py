@@ -2,12 +2,12 @@ from __future__ import annotations
 
 import json
 from decimal import Decimal
+from pathlib import Path
 from typing import Any
 
 import httpx
 import pytest
 
-from docai import llm as llm_module
 from docai.extract import build_messages, coerce_invoice, extract_llm
 from docai.llm import GroqClient, LlmError, parse_json_object
 
@@ -33,7 +33,7 @@ def client_for(responses: list[httpx.Response], seen: list[dict[str, Any]] | Non
 @pytest.fixture(autouse=True)
 def no_sleep(monkeypatch: pytest.MonkeyPatch) -> list[float]:
     slept: list[float] = []
-    monkeypatch.setattr(llm_module.time, "sleep", slept.append)
+    monkeypatch.setattr("docai.llm.time.sleep", slept.append)
     return slept
 
 
@@ -110,3 +110,38 @@ def test_extract_llm_repairs_invalid_json_once() -> None:
     assert usage.calls == 2
     assert seen[1]["messages"][-1]["role"] == "user"
     assert seen[0]["response_format"] == {"type": "json_object"}
+
+
+def test_parse_duration() -> None:
+    from docai.llm import parse_duration
+
+    assert parse_duration("16.717s") == 16.717
+    assert parse_duration("1m26.4s") == 86.4
+    assert parse_duration("11h9m36s") == 11 * 3600 + 9 * 60 + 36
+    assert parse_duration("1ms") == 0.001
+    assert parse_duration(None) is None
+
+
+def test_paces_on_remaining_tokens(no_sleep: list[float]) -> None:
+    headers = {"x-ratelimit-remaining-tokens": "500", "x-ratelimit-reset-tokens": "20s"}
+    first = httpx.Response(200, headers=headers, json={"choices": [{"message": {"content": "{}"}}], "usage": {}})
+    client = client_for([first, completion("{}")])
+    client.chat([{"role": "user", "content": "one"}])
+    assert no_sleep == []
+    result = client.chat([{"role": "user", "content": "two"}])  # needs ~700 tokens, only 500 left
+    assert len(no_sleep) == 1 and 19 < no_sleep[0] <= 20
+    assert result.usage.wait_ms > 0
+
+
+def test_cache_returns_stored_response_without_calling(tmp_path: Path) -> None:
+    calls: list[dict[str, Any]] = []
+    first = client_for([completion('{"a": 1}', prompt=1900, out=300)], calls)
+    first.cache_dir = tmp_path
+    messages = [{"role": "user", "content": "same"}]
+    assert first.chat(messages).content == '{"a": 1}'
+    again = client_for([], calls)
+    again.cache_dir = tmp_path
+    cached = again.chat(messages)
+    assert cached.content == '{"a": 1}'
+    assert cached.usage.prompt_tokens == 1900  # original cost kept for accounting
+    assert len(calls) == 1
