@@ -1,5 +1,7 @@
 # doc-ai-pipeline
 
+[![CI](https://github.com/sinouw/doc-ai-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/sinouw/doc-ai-pipeline/actions/workflows/ci.yml)
+
 Scanned invoice PDFs in French, English and Arabic in, validated JSON out, with a confidence score on every field and a review queue for the fields a person should check.
 
 The pipeline cleans up each page (denoise, deskew), runs OCR, extracts the invoice with a vision LLM on Groq, checks the result (line items add up to the subtotal, VAT matches the rate, the total matches, dates parse, VAT numbers pass their check digits) and scores each field. Fields below the confidence threshold, or blamed by a failed check, go to a small web app where a reviewer corrects or confirms them. Corrections are stored with the old value, the new value, who made them and when.
@@ -184,7 +186,7 @@ uv run ruff check . && uv run ruff format --check . && uv run mypy && uv run pyt
 - **The OCR baseline is simple.** The rules were written against the dev split and are weak on Arabic; a layout-aware extractor would close part of the gap at zero token cost. For Latin-script pages, OCR runs twice (Arabic recogniser first to detect the script, then the Latin one).
 - **`qwen/qwen3.8-27b` is a preview model on Groq**, and the only vision model Groq lists today. Tesseract was not compared because it is not installed on the development machine.
 - **The review app has no authentication** and processes uploads synchronously; it is a reviewer's tool, not a multi-tenant service.
-- **Not verified here:** the Docker image (Docker is not installed on the development machine) and the GitHub Actions workflow (not run yet). The same checks CI runs (ruff, ruff format, mypy --strict, pytest including the OCR integration test) were run locally and pass.
+- **CI covers the build, not a running container.** GitHub Actions runs lint, mypy --strict, the unit tests, the real-OCR integration test and `docker build` (which also runs one OCR pass per script). Nobody has started the container and processed a document in it yet, because Docker is not installed on the development machine.
 <!-- LIMITATIONS:END -->
 
 ## Licence
